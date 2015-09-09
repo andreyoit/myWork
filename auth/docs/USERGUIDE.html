@@ -1,0 +1,943 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+	<head>
+		<title>User Guide - Free Login Script by Quadodo</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<meta name="author" content="Douglas Rennehan" />
+		<meta name="robots" content="all" />
+		<link rel="stylesheet" type="text/css" href="USERGUIDE.css" />
+	</head>
+
+	<body>
+		<div width="100%" align="center">
+			<div align="left" id="main">
+				<h1>User Guide - Free Login Script</h1>
+				<h2>I. Contents</h2>
+				<div class="text">
+					<a name="contents">&nbsp;&nbsp;</a>
+					<ol type="I">
+						<li><a href="#contents" class="menu">Contents</a></li>
+						<li><a href="#introduction" class="menu">Introduction</a></li>
+						<ol type="i">
+							<li><a href="#whatsnew" class="menu">What's New</a></li>
+							<li><a href="#requirements" class="menu">Requirements</a></li>
+							<li><a href="#support" class="menu">Support</a></li>
+							<li><a href="#merging" class="menu">Merging</a></li>
+							<li><a href="#language" class="menu">Language</a></li>
+							<li><a href="#updating" class="menu">Updating</a></li>
+						</ol>
+						<li><a href="#installation" class="menu">Installation</a></li>
+						<ol type="i">
+							<li><a href="#sqlsetup" class="menu">SQL Setup</a></li>
+							<ol>
+								<li><a href="#tableprefix" class="menu">Table Prefix</a></li>
+								<li><a href="#databasetype" class="menu">Database Type</a></li>
+								<li><a href="#databaseport" class="menu">Database Port</a></li>
+								<li><a href="#databaseservername" class="menu">Database Server Name</a></li>
+								<li><a href="#databaseusername" class="menu">Database Username</a></li>
+								<li><a href="#databasepassword" class="menu">Database Password</a></li>
+								<li><a href="#databasename" class="menu">Database Name</a></li>
+							</ol>
+							<li><a href="#cookieinformation" class="menu">Cookie Information</a></li>
+							<ol>
+								<li><a href="#cookieprefix" class="menu">Cookie Prefix</a></li>
+								<li><a href="#cookiepath" class="menu">Cookie Path</a></li>
+								<li><a href="#cookiesecure" class="menu">Cookie Secure</a></li>
+								<li><a href="#cookielength" class="menu">Cookie Length</a></li>
+								<li><a href="#cookiedomain" class="menu">Cookie Domain</a></li>
+							</ol>
+							<li><a href="#securityinformation" class="menu">Security Information</a></li>
+							<ol>
+								<li><a href="#maximumloginattempts" class="menu">Maximum Login Attempts</a></li>
+								<li><a href="#securityimage" class="menu">Security Image</a></li>
+								<li><a href="#maxuploadsize" class="menu">Maximum Upload Size</a></li>
+								<li><a href="#publicregistrations" class="menu">Allow Public Registrations</a></li>
+							</ol>
+							<li><a href="#usersettings" class="menu">User Settings</a></li>
+							<ol>
+								<li><a href="#maxusernamelength" class="menu">Maximum Username Length</a></li>
+								<li><a href="#minusernamelength" class="menu">Minimum Username Length</a></li>
+								<li><a href="#maxpasswordlength" class="menu">Maximum Password Length</a></li>
+								<li><a href="#minpasswordlength" class="menu">Minimum Password Length</a></li>
+								<li><a href="#activationtype" class="menu">Activation Type</a></li>
+								<li><a href="#userregex" class="menu">User RegEx</a></li>
+								<li><a href="#loginredirecturl" class="menu">Login Redirect URL</a></li>
+								<li><a href="#logoutredirecturl" class="menu">Logout Redirect URL</a></li>
+								<li><a href="#defaultgroupname" class="menu">Default Group Name</a></li>
+								<li><a href="#defaultmaskname" class="menu">Default Mask Name</a></li>
+								<li><a href="#redirecttype" class="menu">Redirect Type</a></li>
+								<li><a href="#onlineusersformat" class="menu">Online Users Format</a></li>
+								<li><a href="#onlineusersseparator" class="menu">Online Users Separator</a></li>
+							</ol>
+							<li><a href="#adminuserinformation" class="menu">Admin User Information</a></li>
+							<ol>
+								<li><a href="#username" class="menu">Username</a></li>
+								<li><a href="#password" class="menu">Password</a></li>
+								<li><a href="#emailaddress" class="menu">Email Address</a></li>
+							</ol>
+						</ol>
+						<li><a href="#adminpanel" class="menu">Admin Panel</a></li>
+						<ol type="i">
+							<li><a href="#main" class="menu">Main</a></li>
+							<ol>
+								<li><a href="#phpinfo" class="menu">PHP Info</a></li>
+								<li><a href="#updates" class="menu">Updates</a></li>
+								<li><a href="#configuration" class="menu">Configuration</a></li>
+							</ol>
+							<li><a href="#users" class="menu">Users</a></li>
+							<ol>
+								<li><a href="#adduser" class="menu">Add</a></li>
+								<li><a href="#listusers" class="menu">List</a></li>
+								<li><a href="#removeuser" class="menu">Remove</a></li>
+								<li><a href="#edituser" class="menu">Edit</a></li>
+								<li><a href="#pendingaccounts" class="menu">Pending Accounts</a></li>
+							</ol>
+							<li><a href="#groups" class="menu">Groups</a></li>
+							<ol>
+								<li><a href="#addgroup" class="menu">Add</a></li>
+								<li><a href="#listgroups" class="menu">List</a></li>
+								<li><a href="#removegroup" class="menu">Remove</a></li>
+								<li><a href="#editgroup" class="menu">Edit</a></li>
+							</ol>
+							<li><a href="#pages" class="menu">Pages</a></li>
+							<ol>
+								<li><a href="#addpage" class="menu">Add</a></li>
+								<li><a href="#listpages" class="menu">List</a></li>
+								<li><a href="#removepage" class="menu">Remove</a></li>
+								<li><a href="#editpage" class="menu">Edit</a></li>
+							</ol>
+							<li><a href="#permissions" class="menu">Permissions</a></li>
+							<ol>
+								<li><a href="#addmask" class="menu">Add Mask</a></li>
+								<li><a href="#listmasks" class="menu">List Masks</a></li>
+								<li><a href="#removemask" class="menu">Remove Mask</a></li>
+								<li><a href="#editmask" class="menu">Edit Mask</a></li>
+							</ol>
+							<li><a href="#invitations" class="menu">Invitations</a></li>
+						</ol>
+						<li><a href="#membersection" class="menu">Member Section</a></li>
+					</ol>
+				</div>
+				<h2>II. Introduction</h2>
+				<div class="text">
+					<a name="introduction">&nbsp;&nbsp;</a>Thank you for choosing the <i>Quadodo Login Script</i> for your site. This is an in-depth user's guide which will take you through all the necessary, and simple steps to setup and manage this system. This user's guide must be read before making any changes to any script or installing the system for the first time. If you want just a simple login system, the only part of this you'll need to read are the installation instructions - good luck.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h3>II.i. What's New</h3>
+				<div class="text">
+					<a name="whatsnew">&nbsp;&nbsp;</a>This version contains all the fixes from 3.1.10 as well as removing MySQL support and only allowing MySQLi (the improved, non-deprecated version.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h3>II.ii. Requirements</h3>
+				<div class="text">
+					<a name="requirements">&nbsp;&nbsp;</a>This system does have certain requirements that must be met. First of all this system will not work unless you have <b>PHP 5.5.0</b> or higher. It is also a requirement that you have some sort of database system. This system requires the use of <b>MySQLi</b>
+<br />
+<br />
+If you have any suggestions on database scripts that should be bundled with the system please visit the <a href="http://www.quadodo.net/s.php" class="text" target="_blank">forum</a>.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h3>II.iii. Support</h3>
+				<div class="text">
+					<a name="support">&nbsp;&nbsp;</a>Free help is available for this system. You just have to visit the <a href="http://www.quadodo.net/s.php" target="_blank" class="text">Support Area</a> and post a question. I am alerted of new questions when they are posted and it will be answered as soon as possible.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h3>II.iv. Merging</h3>
+				<div class="text">
+					<a name="merging">&nbsp;&nbsp;</a>Merging is a new feature to this system in version 3, and a very useful one. It will allow you to 'merge' the template of your site with the system itself. All the code of this system is embeddable, so you can wrap HTML right around the PHP code. The following files:
+					<br />
+					<ul>
+						<li>activate.php</li>
+						<li>login.php</li>
+						<li>members.php</li>
+						<li>register.php</li>
+						<li>change_password.php</li>
+						<li>*Custom Member Pages</li>
+					</ul>
+					<br />
+					Can be wrapped in your HTML code. At the top of each of these files you will find:
+					<br />
+					<br />
+					<div class="code">
+&lt;?php<br />
+define('QUADODO_IN_SYSTEM', true);<br />
+require_once('includes/header.php');<br />
+?&gt;
+					</div>
+					<br />
+					<br />
+That code is required at the top of those files so that the files can be accessed correctly and the system will work properly. If it's not found every page would show up blank. Between that and the rest of the PHP code, the start of your HTML code can be placed. For example:
+					<br />
+					<br />
+					<div class="code">
+&lt;?php<br />
+define('QUADODO_IN_SYSTEM', true);<br />
+require_once('includes/header.php');<br />
+?&gt;<br />
+<b>&lt;html&gt;<br />
+&lt;head&gt;<br />
+&lt;title&gt;Login to My Site&lt;/title&gt;<br />
+&lt;/head&gt;<br />
+&lt;body&gt;<br />
+&lt;div align="center"&gt;</b><br />
+&lt;?php<br />
+/*** *** *** *** *** ***<br />
+* @package Quadodo Login Script<br />
+* @file &nbsp; &nbsp; &nbsp; &nbsp; login.php...<br />
+... they are commenting.<br />
+*** *** *** *** *** ***/<br />
+<br />
+// Is the user logged in already?<br />
+if ($qls->user_info['username'] == '') {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;if (isset($_POST['process'])) {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Try to login the user<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if ($qls->User->login_user()) {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo LOGIN_SUCCESS;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Output login error<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo $qls->User->login_error . LOGIN_TRY_AGAIN;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+&nbsp;&nbsp;&nbsp;&nbsp;else {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;// Get the login form<br />
+&nbsp;&nbsp;&nbsp;&nbsp;require_once('html/login_form.php');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+}<br />
+else {<br />
+echo LOGIN_ALREADY_LOGGED;<br />
+}<br />
+?&gt;<br />
+<b>&lt;/div&gt;<br />
+&lt;/body&gt;<br />
+&lt;/html&gt;</b>
+					</div>
+					<br />
+					<br />
+That will align the login form to the center of the page. You can put as much HTML as you like, as long as the code at the start is always at the start and the PHP code in the middle is not altered.
+					<br />
+					<br />
+If you want to have the same header and footer for each page you could add whatever you want as the header on each page right at the bottom of the <b>includes/header.php</b> file:
+					<br />
+					<br />
+<div class="code">
+&lt;?php<br />
+if (!defined('QUADODO_IN_SYSTEM')) {<br />
+exit;<br />
+}<br />
+<br />
+// Current language<br />
+define('SYS_CURRENT_LANG', 'English');<br />
+<br />
+// The qls class will start the other classes<br />
+require_once('qls.class.php');<br />
+$qls = new qls();<br />
+?&gt;<br />
+&lt;html&gt;<br />
+&lt;head&gt;<br />
+&lt;title&gt;Example.com&lt;/title&gt;<br />
+&lt;/head&gt;<br />
+&lt;body&gt;
+</div>
+					<br />
+					<br />
+Then for the footer, you could make a file called <b>footer.php</b> and put it in the <b>includes</b> folder. Then inside this file you could put something like this:
+					<br />
+					<br />
+<div class="code">
+&lt;/body&gt;<br />
+&lt;/html&gt;
+</div>
+					<br />
+					<br />
+Now that you have the <b>footer.php</b> completed you can add this line of code at the bottom of every page (before the <b>?&gt;</b>) in the main directory that can have this done (list above):
+					<br />
+					<br />
+<div class="code">
+require_once('includes/footer.php');
+</div>
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h3>II.v. Language</h3>
+				<div class="text">
+					<a name="language">&nbsp;&nbsp;</a>The default language of this system is <b>English</b>, but it has the ability to be used in different languages. In the <b>includes/header.php</b> file you will find:
+					<br />
+					<br />
+					<div class="code">
+define('SYS_CURRENT_LANG', 'English');
+					</div>
+					<br />
+					<br />
+The <i>English</i> refers to the <b>includes/English.lang.php</b> file. If you create or edit this file and save it as something else, it must be named <b>NewName.lang.php</b> or it won't work properly. If you do make another one, the code in the <b>includes/header.php</b> file would have to be changed to:
+					<br />
+					<br />
+					<div class="code">
+define('SYS_CURRENT_LANG', 'NewName');
+					</div>
+					<br />
+					<br />
+Any of the values in the <b>includes/English.lang.php</b> file can be edited to fit your needs. I suggest you edit the links in their to suit the style of your site if needed.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h3>II.vi. Updating</h3>
+				<div class="text">
+					<a name="updating">&nbsp;&nbsp;</a>Updating from 3.1.10 or 3.1.9 only requires you replace all the files in your system with the files in the <b>qls-3.1.11-changed_files_only</b> package.
+                    <br />
+                    <br />
+                    If there are any questions about this process please contact me in the <a href="http://www.quadodo.net/s.php" class="text" target="_blank">Support Area</a><br />
+                    <br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h2>III. Installation</h2>
+				<div class="text">
+					<a name="installation">&nbsp;&nbsp;</a>The first thing you need to do if you haven't yet, is to upload this entire system to your site. It can be in any folder you wish. There is no index file provided with the system, so you will have to make one yourself. If you want to know how to edit the members page please see the <a href="#membersection" class="text">section on bottom</a>. The following sections will teach you how to fill in the fields on the installation page. If you don't know what you're doing I suggest you read this section carefully and make sure you don't miss anything.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h3>III.i. SQL Setup</h3>
+				<div class="text">
+					<a name="sqlsetup">&nbsp;&nbsp;</a>Configuring the SQL is simple enough. All you have to do is fill in the necessary fields according to the information that your host gave you, or that you created. If you need more detail look at the sections below.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>III.i.1. Table Prefix</h4>
+				<div class="text">
+					<a name="tableprefix">&nbsp;&nbsp;</a>This is the prefix that will go on the front of all of your SQL tables. This is useful if you have tables with the same names as the ones that will be created by this system. It may also be useful if you need to create similar tables later. The default is <i>qls3_</i> but it can be anything you like as long as it starts with a letter or underscore, followed by 0 - 253 letters, numbers or underscores. If you don't want to use a prefix, just leave the field blank.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>III.i.2. Database Type</h4>
+				<div class="text">
+					<a name="databasetype">&nbsp;&nbsp;</a>The database type is the type of database you wish to use for this system. The only choice that is currently available is <b>MySQLi</b>.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>III.i.3. Database Port</h4>
+				<div class="text">
+					<a name="databaseport">&nbsp;&nbsp;</a>This is the port that you connect to your database with. This should have been provided by your host. If you use a free database host such as <a href="http://www.freesql.org/" target="_blank" class="text">freesql.org</a>, you will see the port as a number at the end of the server name they gave you. If you really have no idea what this is, you don't need to fill the field out because it's most likely not needed.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>III.i.4. Database Server Name</h4>
+				<div class="text">
+					<a name="databaseservername">&nbsp;&nbsp;</a>The database server name is the name of the server where your database can be reached. For the most part, unless your host gave you different information, it is always <i>localhost</i>. If your host gave you another server name use that one or it won't work.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>III.i.5. Database Username</h4>
+				<div class="text">
+					<a name="databaseusername">&nbsp;&nbsp;</a>This along with the other SQL information should have been provided by your host. If it's not, you may need to create a username by yourself. If you use a management system such as <i>cPanel</i> you can create and manage databases via the <i>MySQL</i> section on the main page. If you are still having trouble managing databases, you may visit the <a href="http://www.quadodo.net/s.php" target="_blank" class="text">Support Area</a> and ask a question.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>III.i.6. Database Password</h4>
+				<div class="text">
+					<a name="databasepassword">&nbsp;&nbsp;</a>The database password should have been given along with your username. If you created a database it should be the password you entered. If you still don't know how to setup databases please visit the <a href="http://www.quadodo.net/s.php" target="_blank" class="text">Support Area</a> and ask a question.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>III.i.7. Database Name</h4>
+				<div class="text">
+					<a name="databasename">&nbsp;&nbsp;</a>The database name was either given by your host or created when you created a database. The username and password must correspond to the database or it won't work correctly. If you are still having trouble understanding how to work databases please visit the <a href="http://www.quadodo.net/s.php" target="_blank" class="text">Support Area</a> and ask a question.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h3>III.ii. Cookie Information</h3>
+				<div class="text">
+					<a name="cookieinformation">&nbsp;&nbsp;</a>The cookie information is important as it decides how to manage user's sessions while logged into your site. Cookies are necessary (well sessions at least) for running a login system. This system sets both sessions and cookies at the same time. This way if a browser doesn't allow cookies the session will still exist.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>III.ii.1. Cookie Prefix</h4>
+				<div class="text">
+					<a name="cookieprefix">&nbsp;&nbsp;</a>The cookie prefix should be set so collisions between cookie/session names won't happen. It must start with a letter or underscore, followed by 0 - 253 letters, numbers or underscores. If you don't want to use it, just leave the field blank.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>III.ii.2. Cookie Path</h4>
+				<div class="text">
+					<a name="cookiepath">&nbsp;&nbsp;</a>The cookie path should be equal to the path to this system. For example, if this system is located at <i>http://www.example.com/members/</i> then the cookie path would be equal to <i>/members/</i> (with both /). It is important that this is set correctly because the cookies won't work right and if you have user authentication then the activation link won't work.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>III.ii.3. Cookie Secure</h4>
+				<div class="text">
+					<a name="cookiesecure">&nbsp;&nbsp;</a>This option is to set the security for cookies. This should only be used if your site is accessed through <i>https://</i> instead of <i>http://</i>. If you don't know which one to choose just choose No.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>III.ii.4. Cookie Length</h4>
+				<div class="text">
+					<a name="cookielength">&nbsp;&nbsp;</a>The cookie length determines how long you want cookies/sessions to last (in seconds) before they expire in the database. Right now it is set at <i>1209600</i> which is two weeks. If the user's browser supports cookies, the cookie will update the time in the database every visit. This will make sure that it is only after 2 weeks of no activity that they are logged out. Here are some useful periods of time in seconds:<br />
+<br />
+					<table border="1" cellspacing="0" cellpadding="2">
+						<tr>
+							<th align="center">Time Period</th>
+							<th align="center">In Seconds</th>
+							<th align="center">Math</th>
+						</tr>
+						<tr>
+							<td>1 hour</td>
+							<td>3600</td>
+							<td>3600 * 1</td>
+						</tr>
+						<tr>
+							<td>6 hours</td>
+							<td>21600</td>
+							<td>3600 * 6</td>
+						</tr>
+						<tr>
+							<td>1 day</td>
+							<td>86400</td>
+							<td>3600 * 24</td>
+						</tr>
+						<tr>
+							<td>1 week</td>
+							<td>604800</td>
+							<td>(3600 * 24) * 7</td>
+						</tr>
+						<tr>
+							<td>2 weeks</td>
+							<td>1209600</td>
+							<td>((3600 * 24) * 7) * 2</td>
+						</tr>
+						<tr>
+							<td>1 month</td>
+							<td>2419200</td>
+							<td>((3600 * 24) * 7) * 4</td>
+						</tr>
+						<tr>
+							<td>6 months</td>
+							<td>14515200</td>
+							<td>(3600 * 24) * (365 / 2)</td>
+						</tr>
+						<tr>
+							<td>1 year</td>
+							<td>31536000</td>
+							<td>(3600 * 24) * 365
+						</tr>
+					</table>
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>III.ii.5. Cookie Domain</h4>
+				<div class="text">
+					<a name="cookiedomain">&nbsp;&nbsp;</a>The cookie domain is very important as it tells the browser which site the cookie can be read from. It is also used to determine the activation link for your site. For example, if your site was <i>http://www.example.com/</i> you would put <b>.example.com</b> (with the dot at the front). This allows the cookie to be read by your site and any subdomains of your site. Make sure there is no <i>www</i> in front of it or the activation link sent to users won't work.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h3>III.iii. Security Information</h3>
+				<div class="text">
+					<a name="securityinformation">&nbsp;&nbsp;</a>Security is very important when it comes to programming. This system has many internal security features as well as external. The external features include <i>maximum login attempts</i> and a <i>security image</i>. These will help to stop spammers and just plain mean people from hurting your site.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>III.iii.1. Maximum Login Attempts</h4>
+				<div class="text">
+					<a name="maximumloginattempts">&nbsp;&nbsp;</a>The <i>maximum login attempts</i> is the number of times that someone can fail at logging in for 12 hours. The default value is 5 but it can be set to anything from 1 to 99. I don't suggest that you use anything below 5 attempts as it may stop some real users from logging in. This can cause them to be annoyed and leave your site.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>III.iii.2. Security Image</h4>
+				<div class="text">
+					<a name="securityimage">&nbsp;&nbsp;</a>The <i>security image</i> feature will stop robots or spammers from creating fake user accounts on your site. Fake user accounts can be used to advertise or just ruin your site. This feature requires the GD library for PHP. This field will only show up on the installation page if the library exists, if not it won't show up. I suggest you use this feature if possible but it will use around 100kB of bandwidth everytime it is viewed.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>III.iii.3. Maximum Upload Size</h4>
+				<div class="text">
+					<a name="maxuploadsize">&nbsp;&nbsp;</a>This is the maximum file size of a PHP file that can be uploaded to your site (in bytes). The only people allowed to access this are people who have access to the admin panel. It is currently set to 1MB.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>III.iii.4. Allow Public Registrations</h4>
+				<div class="text">
+					<a name="publicregistrations">&nbsp;&nbsp;</a>Public registrations may defeat the purpose of having a login system, so in this version there is the ability to stop people from registering on your site. If you disallow public registrations, you have to send people invites via the admin panel. More is explained in the admin panel section of this guide.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h3>III.iv. User Settings</h3>
+				<div class="text">
+					<a name="usersettings">&nbsp;&nbsp;</a>These are the settings that will apply to all and any user that signs up for your site.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>III.iv.1. Maximum Username Length</h4>
+				<div class="text">
+					<a name="maxusernamelength">&nbsp;&nbsp;</a>This is the maximum length (in characters) that a username can be when a user signs up for your site. The maximum length will include this number, so if you choose <i>15</i> someone could use the username <i>a12345678901234</i> and it would work. The maximum value you can enter is 99. Anything higher will crash the system.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>III.iv.2. Minimum Username Length</h4>
+				<div class="text">
+					<a name="minusernamelength">&nbsp;&nbsp;</a>This is the minimum length (in characters) that a username can be when a user signs up for your site. The minimum length will include this number, so if you choose <i>2</i> someone could use the username <i>a1</i> and it would still work. The maximum length that you can enter is 99 - if it's higher the system won't work properly.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>III.iv.3. Maximum Password Length</h4>
+				<div class="text">
+					<a name="maxpasswordlength">&nbsp;&nbsp;</a>This is the maximum length (in characters) of a password that a user can enter. This should be kept between 15 and 30 for security reasons. The maximum value you can enter is 99 - if it's higher the system will fail.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>III.iv.4. Minimum Password Length</h4>
+				<div class="text">
+					<a name="minpasswordlength">&nbsp;&nbsp;</a>The minimum password length is important because it won't let users enter small passwords that can be broken easily. The best value for this is 4, 5 or 6. The maximum value you can enter is 99 though I don't suggest using it.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>III.iv.5. Activation Type</h4>
+				<div class="text">
+					<a name="activationtype">&nbsp;&nbsp;</a>The <i>activation type</i> is the type of authentication that users are required to go through before their account becomes active. The three choices are <i>None</i>, <i>User</i> or <i>Admin</i>. <i>None</i> will require no activation - they can login as soon as they register. <i>User</i> means they will be sent an email with an activation link. They won't be able to login until they follow this link and activate their account. This prevents robots from having accounts. <i>Admin</i> means that only you can decide whether or not to activate their account. This will be useful if you only want certain people signing up for your site.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>III.iv.6. User RegEx</h4>
+				<div class="text">
+					<a name="userregex">&nbsp;&nbsp;</a>RegEx is short for <i><b>Reg</b>ular <b>Ex</b>pressions</i>. It is generally used for matching and replacing certain character strings in programming. The default value is <b>/[^a-zA-z0-9_\-]/</b>. This will allow users to enter usernames that begin with an underscore, number or letter followed by a period, underscore, letter or number. The PHP function used to do this matching is the <a href="http://www.php.net/preg_match" target="_blank" class="text">preg_match()</a> function so only regular expressions that will work with that function will work.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>III.iv.7. Login Redirect URL</h4>
+				<div class="text">
+					<a name="loginredirecturl">&nbsp;&nbsp;</a>The <i>login redirect URL</i> is the URL to which users will be redirected once they login to your site. It can be relative to the current path of the login system or a full URL. It must be set or the user will be redirected to a non-existant page.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>III.iv.8. Logout Redirect URL</h4>
+				<div class="text">
+					<a name="logoutredirecturl">&nbsp;&nbsp;</a>The <i>logout redirect URL</i> is the URL to which users will be redirected to once they logout from your site. It can be relative to the current path of the login system or a full URL. It must be set or the user will be redirected to a non-existant page.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>III.iv.9. Default Group Name</h4>
+				<div class="text">
+					<a name="defaultgroupname">&nbsp;&nbsp;</a>This will be the default group that users will be assigned to when they register. The default value is <b>Default</b>.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>III.iv.10. Default Mask Name</h4>
+				<div class="text">
+					<a name="defaultmaskname">&nbsp;&nbsp;</a>This will be the default permission mask name that will be assigned to the default group. The permissions are automatically set but can be edited later. The default value is <b>Default</b>.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>III.iv.11. Redirect Type</h4>
+				<div class="text">
+					<a name="redirecttype">&nbsp;&nbsp;</a>This is the type of redirection the system will use when redirecting users. It should be set on the recommended PHP redirection type. The other two may have compatibility problems whereas the PHP method will not.
+				</div>
+				<h4>III.iv.12. Online Users Format</h4>
+				<div class="text">
+					<a name="onlineusersformat">&nbsp;&nbsp;</a>This is the format that the usernames will be output if you choose to use the online user list feature. The default value for this field is <b>{username}</b>. This is just the user's username by itself. You can also use <b>{id}</b> which would be replaced by their user ID. HTML can be used in that field if you need to link to a user profile or something of that sort. <b>{username}</b> and <b>{id}</b> will always be replaced.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>III.iv.13. Online Users Separator</h4>
+				<div class="text">
+					<a name="onlineusersseparator">&nbsp;&nbsp;</a>This is the thing that will separate usernames when outputting the current online user list. It defaults to just a comma ( <b>,</b> ) but anything could be used (including HTML).
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h3>III.v. Admin User Information</h3>
+				<div class="text">
+					<a name="adminuserinformation">&nbsp;&nbsp;</a>The admin user information is important because it is the main account of the system. Without it you won't be able to manage anything from the admin panel or activate users (if you selected Admin for the activation type).
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>III.v.1. Username</h4>
+				<div class="text">
+					<a name="username">&nbsp;&nbsp;</a>This is what your username will be. It will be used as the main account for your site and will be the only account allowed to access the admin panel. It must follow the same restrictions as what you entered before this field. If you put a maximum length on usernames for 15 you can't have a 18 character username for the admin username.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>III.v.2. Password</h4>
+				<div class="text">
+					<a name="password">&nbsp;&nbsp;</a>This is the password for the admin account. Try to make it as secure as possible because you don't want random people going onto your admin account and messing around in the admin panel.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>III.v.3. Email Address</h4>
+				<div class="text">
+					<a name="emailaddress">&nbsp;&nbsp;</a>This is your email address. It isn't really used for anything, but in future versions may be needed for new functionality. A valid email address must be entered that is between the length of 6 and 101.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h2>IV. Admin Panel</h2>
+				<div class="text">
+					<a name="adminpanel">&nbsp;&nbsp;</a>The <i>admin panel</i> is a very important feature of this system. It allows you to manage users (edit, delete and ban) as well as manage the rest of the system. You are also able to see updates to the system (in English only) at anytime. In version 3.1.x you can now allow more than one user access to the admin panel because of the new permission mask and grouping system. The entire admin panel is based on AJAX, so it loads quickly. The only fault with this is that the back button is broken, and you must click the <b>Go</b> button instead of hitting the Enter/Return button on your keyboard.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h3>IV.i. Main</h3>
+				<div class="text">
+					<a name="main">&nbsp;&nbsp;</a>In this area you just see a brief message about the login script. You will be able to select one of the tabs/links in the menu to go to a new page. The available links under the <b>Main</b> tab are: PHP Info, Updates and Configuration.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>IV.i.1. PHP Info</h4>
+				<div class="text">
+					<a name="phpinfo">&nbsp;&nbsp;</a>This will display all the information about your PHP configuration. If nothing shows up it is because your host has disabled the <b>phpinfo()</b> function. Be careful with who you allow to access this, because they may be able to hack your site with the information.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>IV.i.2. Updates</h4>
+				<div class="text">
+					<a name="updates">&nbsp;&nbsp;</a>On this page you will find the current updates to the system for your version. Updates are only available in English though :(
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>IV.i.3. Configuration</h4>
+				<div class="text">
+					<a name="configuration">&nbsp;&nbsp;</a>The configuration is basically the same as the installation information. If you need to know how to fill out one of the fields read the installation section. You will not be able to change the SQL information via this form. If you need to edit the SQL information please visit the <a href="http://www.quadodo.net/s.php" class="text" target="_blank">Support Area</a> and ask a question.
+				</div>
+				<h3>IV.ii. Users</h3>
+				<div class="text">
+					<a name="users">&nbsp;&nbsp;</a>In this tab you will be able to add, list, remove, edit or see pending accounts. The available links under the <b>Users</b> tab are: Add, List, Remove, Edit and Pending Accounts.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>IV.ii.1. Add User</h4>
+				<div class="text">
+					<a name="adduser">&nbsp;&nbsp;</a>When adding a user all you have to do is fill out the form. The username is their username and must follow the guidelines you set in the configuration. The password can be whatever you want, and then you must confirm it. The email address should be a valid one in case a plugin is installed which uses their email address. You must also confirm the email address to avoid typos. Their permission mask doesn't have to be set unless you want a special permission mask for this one user, instead of using the one for the group. When you select the group, the permission mask for the group will be used for the user, unless you specified a specific mask for them.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>IV.ii.2. List Users</h4>
+				<div class="text">
+					<a name="listusers">&nbsp;&nbsp;</a>The user list is just that. It will list all the users currently registered for your site. It uses a pagination system to decrease bandwidth consumption and only shows 20 users at a time. From the user list you will be able to <i>Edit</i> or <i>Remove</i> the user. Be careful because if you click the remove button there is no way to reverse it.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>IV.ii.3. Remove User</h4>
+				<div class="text">
+					<a name="removeuser">&nbsp;&nbsp;</a>On this page you will be given a text box in which you can enter a username to remove. The username must be exact or it will return an error of not found. If you don't know who you want to delete, go to the user list and remove from there.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>IV.ii.4. Edit User</h4>
+				<div class="text">
+					<a name="edituser">&nbsp;&nbsp;</a>From the edit user form you will be able to specify a new username, email address, permission mask, group and whether or not they are banned. You should only allow certain people to access this, because they could possible edit information about your account.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>IV.ii.5. Pending Accounts</h4>
+				<div class="text">
+					<a name="pendingaccounts">&nbsp;&nbsp;</a>Here you will find a list of users' accounts that need activation. If you don't require activations on your site nothing will appear here. If you do require Admin activation or User activation their accounts will be available to activate from the panel.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h3>IV.iii. Groups</h3>
+				<div class="text">
+					<a name="groups">&nbsp;&nbsp;</a>Here you will be able to manage your user groups. User groups are things that allow the grouping of users. It can be useful for applying permission masks to a mass number of your users. Certain groups may only be able to access certain parts of your site. The links available under the <b>Groups</b> tab include: add, list, remove and edit.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>IV.iii.1. Add Group</h4>
+				<div class="text">
+					<a name="addgroup">&nbsp;&nbsp;</a>Using the add group form you can add user groups. The first field you will find is the group name. It should only be alphanumeric and contain 1 - 255 characters. Next you will find the permission mask. It will be the permissions associated with this group. All users in the group will have that mask, unless you specified a specific mask for them. The next field is the leader. It must be a valid username. If a valid username is not entered it will return an error. Finally you have the choice whether or not to allow the group to the public. Public groups can have anyone join them via the group control panel.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>IV.iii.2. List Groups</h4>
+				<div class="text">
+					<a name="listgroups">&nbsp;&nbsp;</a>Here you will find a group list. It contains all the groups that have been created so far. You will be able to edit the group, remove the group or edit the leader of the group (edit their actual account information). All the groups will be listed, no pagination is present.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>IV.iii.3. Remove Group</h4>
+				<div class="text">
+					<a name="removegroup">&nbsp;&nbsp;</a>On the remove group page you will find a drop down with all the groups. Select a group and then click <b>Go</b>. The selected group will be removed from the site, and all users under that group will be put in the default group. You can also remove groups from the group list.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>IV.iii.4. Edit Group</h4>
+				<div class="text">
+					<a name="editgroup">&nbsp;&nbsp;</a>Editing a group is the same as adding a group except you are just updating the information. If you follow the link in the group list, you will be brought right to the information. If you don't and follow the link under the tab you will be brought to a drop down with all the groups listed. You can then choose one.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h3>IV.iv. Pages</h3>
+				<div class="text">
+					<a name="pages">&nbsp;&nbsp;</a>The paging system is a new feature in <b>3.1.x</b>. It allows you to add, list, edit and remove pages. There are several ways to add a page (explained below). The only thing is that the Page section in the admin panel doesn't use AJAX, it actually submits the form. This means you will leave the admin panel for a second, until you click the link to go back.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>IV.iv.1. Add Page</h4>
+				<div class="text">
+					<a name="addpage">&nbsp;&nbsp;</a>Any custom page should have this at the <b>very very</b> top:
+					<br />
+					<br />
+					<div class="code">
+&lt;?php<br />
+define('QUADODO_IN_SYSTEM', true);<br />
+require_once('includes/header.php');<br />
+$qls->Security->check_auth_page('<b>{PAGE_NAME}</b>');<br />
+?&gt;<br />
+					</div>
+					<br />
+					There are three ways to add a page to the system:
+					<ul>
+						<li>Uploading via Admin Panel</li>
+						<li>Creating in the Admin Panel</li>
+						<li>Uploading via an FTP Program</li>
+					</ul>
+					<br />
+					When uploading via the admin panel, you can select a PHP file on your computer (must have <b>.php</b> extension) and upload it. It will be automatically added to the database. When a file is added to the database it can be decided whether or not to allow certain masks/groups to visit it.
+					<br />
+					<br />
+					When creating in the admin panel you have to give it a name - it <i>may</i> overwrite the file if it is found so choose the name wisely (an error will be output too). You must also insert some kind of page data.
+					<br />
+					<br />
+					When uploading via an FTP program (or some other way) you should go to the form in the Add Page section. On bottom it says <b>Create a New File Here</b>. Using that form, enter the file name that you just uploaded but put absolutely nothing in the textarea for the content. This will add the file to the database, but allow you to upload it via your FTP program.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>IV.iv.2. List Pages</h4>
+				<div class="text">
+					<a name="listpages">&nbsp;&nbsp;</a>The list pages section will list all the pages you have on the site. It will also give you the option to edit the page, or remove the page (those functions are explained below). There is no pagination present in the page list so all the pages will be shown.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>IV.iv.3. Remove Page</h4>
+				<div class="text">
+					<a name="removepage">&nbsp;&nbsp;</a>When you go to the remove page area, you will be given a drop down with a list of current pages. Select one and click <b>Go</b>. You can also remove pages from the actual page list. When you remove a page, it will be removed from the database and your site so make sure you have copies if you need them!
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>IV.iv.4. Edit Page</h4>
+				<div class="text">
+					<a name="editpage">&nbsp;&nbsp;</a>The edit page form allows you to edit the name of the file and the content. You can insert whatever you like in the text area, but some code should stay the same (such as header information). You should also limit people from having access to this area of the admin panel, as some may use it against you :(
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h3>IV.v. Permissions</h3>
+				<div class="text">
+					<a name="permissions">&nbsp;&nbsp;</a>The permissions system is a new feature in the <b>3.1.x</b> release. It allows you to block/allow certain users from doing certain things on the login system. You can allow certain administrator functions, or just block certain groups from accessing pages. The links available under the <b>Permissions</b> tab are: add mask, list masks, remove mask and edit mask.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>IV.v.1. Add Mask</h4>
+				<div class="text">
+					<a name="addmask">&nbsp;&nbsp;</a>The add mask form is a rather big form to do. On the left hand side you have a list of administrator functions and whether or not to allow them to do it. They will not be able to do anything in the admin panel unless the first one is selected as allowed. You should only give those permissions to people you trust, because they may be able to hurt your site.
+					<br />
+					<br />
+					On the right hand side you have the pages that are currently on your site. When a page is added, it is automatically added to the database as not allowed to view. There also must be a special code on any page if you want the permission system to work (it's mentioned above in the <a href="#addpage" class="text">Add Page</a> section).
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>IV.v.2. List Masks</h4>
+				<div class="text">
+					<a name="listmasks">&nbsp;&nbsp;</a>Here you will find a list of all the masks currently in your database. From there you will be able to edit or remove them. If you select to remove them there is no other confirmation so make sure you don't click it by accident!
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>IV.v.3. Remove Mask</h4>
+				<div class="text">
+					<a name="removemask">&nbsp;&nbsp;</a>On this page you will find a drop down with all the names of your masks. All you have to do is select a mask and click <b>Go</b>. It will immediately be removed and all the groups with the selected mask will be reset to the default mask.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h4>IV.v.4. Edit Mask</h4>
+				<div class="text">
+					<a name="editmask">&nbsp;&nbsp;</a>Editing a mask is the same thing as adding a mask except you're updating the information. You must edit a mask everytime you add a page because no one will be allowed to access the page (for security reasons).
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h3>IV.vi. Invitations</h3>
+				<div class="text">
+					<a name="invitations">&nbsp;&nbsp;</a>The invitation system is new with the <b>3.1.x</b> release. It allows you to invite people to sign up for your site if you have disabled public registrations. When you disable public registrations and someone goes to the <b>register.php</b> page, they will recieve an error. When you send an invite a code is given to the user which is in the URL. The code is then read by the system and it sees that they are allowed to sign up so it allows them.
+					<br />
+					<br />
+					On the invitation form you will find a place to put the person's email address along with your email address. Next you will find a place to put the URL of the register.php page. This is necessary because the user needs a link to follow to the register page. The link to the register page may already be generated by the PHP script. It must follow this format:
+					<br />
+					<br />
+					<b>http://www.example.com/path/register.php</b>
+					<br />
+					<br />
+					There can be nothing at the end or the user will follow a bad link. Once the user accepts the invitation the code they were given becomes invalid.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+				<h2>V. Member Section</h2>
+				<div class="text">
+					<a name="membersection">&nbsp;&nbsp;</a>With the new version of this login script member sections can be made with very little coding necessary. There is currently a file located in the main directory of the login system called <b>members.php</b>. It is the basic layout of the pages that will require authentication. Here is what that file currently looks like:
+					<br />
+					<br />
+					<div class="code">
+&lt;?php<br />
+define('QUADODO_IN_SYSTEM', true);<br />
+require_once('includes/header.php');<br />
+$qls-&gt;Security-&gt;check_auth_page('members.php');<br />
+?&gt;<br />
+<br />
+<br />
+<br />
+&lt;?php<br />
+// Look in the USERGUIDE.html for more info<br />
+if ($qls-&gt;user_info['username'] != '') {<br />
+?&gt;<br />
+<br />
+<b>You are logged in as &lt;?php echo $qls-&gt;user_info['username']; ?&gt;&lt;br /&gt;<br />
+Your email address is set to &lt;?php echo $qls-&gt;user_info['email']; ?&gt;&lt;br /&gt;<br />
+There have been &lt;b&gt;&lt;?php echo $qls-&gt;hits('members.php'); ?&gt;&lt;/b&gt; visits to this page.</b><br />
+<br />
+&lt;?php<br />
+}<br />
+else {<br />
+?&gt;<br />
+<br />
+<b>You are currently not logged in.</b><br />
+<br />
+&lt;?php<br />
+}<br />
+?&gt;
+					</div>
+					<br />
+					<br />
+That file could be edited to look something like this:
+					<br />
+					<br />
+					<div class="code">
+&lt;?php<br />
+define('QUADODO_IN_SYSTEM', true);<br />
+require_once('includes/header.php');<br />
+$qls-&gt;Security-&gt;check_auth_page('members.php');<br />
+?&gt;<br />
+<b>&lt;html&gt;<br />
+&lt;head&gt;<br />
+&lt;title&gt;Member Section&lt;/title&gt;<br />
+&lt;/head&gt;<br />
+&lt;body&gt;<br />
+&lt;div align="center"&gt;</b><br />
+&lt;?php<br />
+if ($qls->user_info['username'] != '') {<br />
+?&gt;<br />
+<br />
+<b>Hello there &lt;b&gt;&lt;?php echo $qls-&gt;user_info['username']; ?&gt;&lt;/b&gt;!!&lt;br /&gt;<br />
+Your current email address is set to &lt;b&gt;&lt;?php echo $qls-&gt;user_info['email']; ?&gt;&lt;/b&gt;<br />
+There have been &lt;b&gt;&lt;?php echo $qls-&gt;hits('members.php'); ?&gt;&lt;/b&gt; visits to this page.</b><br />
+<br />
+&lt;?php<br />
+}<br />
+else {<br />
+?&gt;<br />
+<br />
+<b>Sorry but you must be &lt;a href="register.php"&gt;registered&lt;/a&gt; and &lt;a href="login.php"&gt;logged in&lt;/a&gt; to access this area.</b><br />
+<br />
+&lt;?php<br />
+}<br />
+?&gt;<br />
+<b>&lt;/div&gt;<br />
+&lt;/body&gt;<br />
+&lt;/html&gt;</b>
+					</div>
+					<br />
+					<br />
+As you can probably tell, all the user information is available via <b>$qls->user_info['<i>name</i>']</b>. The available information that is default by the system is:<br />
+					<ul>
+						<li><b>$qls-&gt;user_info['id']</b> - Their ID number</li>
+						<li><b>$qls-&gt;user_info['username']</b> - Their username</li>
+						<li><b>$qls-&gt;user_info['password']</b> - Their password hash</li>
+						<li><b>$qls-&gt;user_info['code']</b> - Their activation code</li>
+						<li><b>$qls-&gt;user_info['active']</b> - Whether they are active or not</li>
+						<li><b>$qls-&gt;user_info['last_login']</b> - The UNIX timestamp of the last time they logged in</li>
+						<li><b>$qls-&gt;user_info['last_session']</b> - The last value of their last session</li>
+						<li><b>$qls-&gt;user_info['blocked']</b> - Whether they are blocked or not</li>
+						<li><b>$qls-&gt;user_info['tries']</b> - Recorded tries until this point (it's reset every 12 hours)</li>
+						<li><b>$qls-&gt;user_info['last_try']</b> - The UNIX timestamp of their last try</li>
+						<li><b>$qls-&gt;user_info['email']</b> - Their email address</li>
+						<li><b>$qls-&gt;user_info['mask_id']</b> - Their mask ID</li>
+						<li><b>$qls-&gt;user_info['group_id']</b> - Their group ID</li>
+						<li><b>$qls-&gt;hits('<i>{FILE_NAME}</i>')</b> - The current page hits</li>
+					</ul>
+					<br />
+Another useful function is the <b>$qls-&gt;Security-&gt;check_auth_page('<i>{FILE_NAME}</i>');</b> function. This will check to see if the user is allowed to access the page.
+<br />
+<br />
+As many of these pages can be created as you want. They can be written in the admin panel under the pages tab. If you still can't figure out how to do this, please post a question in the <a href="http://www.quadodo.net/s.php" target="_blank" class="text">Support Area</a>.
+					<br />
+					<br />
+					<a href="#contents" class="text">Top</a>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
