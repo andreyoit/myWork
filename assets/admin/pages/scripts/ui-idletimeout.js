@@ -18,7 +18,7 @@ var UIIdleTimeout = function () {
                 keepAliveURL: 'demo/idletimeout_keepalive.php',
                 serverResponseEquals: 'OK',
                 onTimeout: function(){
-                    window.location = "extra_lock.html";
+                    window.location = "../../../../old/extra_lock.html";
                 },
                 onIdle: function(){
                     $('#idle-timeout-dialog').modal('show');
