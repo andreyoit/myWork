@@ -1,77 +1,178 @@
-[01-Sep-2015 21:17:34 UTC] PHP Warning:  filesize(): stat failed for /home/ubuntu/workspace/auth//pages/dash.php in /home/ubuntu/workspace/auth/includes/qls.class.php on line 251
-[01-Sep-2015 21:17:34 UTC] PHP Stack trace:
-[01-Sep-2015 21:17:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/auth/admincp.php:0
-[01-Sep-2015 21:17:34 UTC] PHP   2. qls->fetch_file_data() /home/ubuntu/workspace/auth/admincp.php:311
-[01-Sep-2015 21:17:34 UTC] PHP   3. filesize() /home/ubuntu/workspace/auth/includes/qls.class.php:251
-[01-Sep-2015 21:17:43 UTC] PHP Warning:  unlink(/home/ubuntu/workspace/auth//pages/dash.php): No such file or directory in /home/ubuntu/workspace/auth/includes/Admin.class.php on line 588
-[01-Sep-2015 21:17:43 UTC] PHP Stack trace:
-[01-Sep-2015 21:17:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/auth/admincp.php:0
-[01-Sep-2015 21:17:43 UTC] PHP   2. Admin->remove_page() /home/ubuntu/workspace/auth/admincp.php:260
-[01-Sep-2015 21:17:43 UTC] PHP   3. unlink() /home/ubuntu/workspace/auth/includes/Admin.class.php:588
-[01-Sep-2015 21:19:14 UTC] PHP Warning:  filesize(): stat failed for /home/ubuntu/workspace/auth//dashboard/ in /home/ubuntu/workspace/auth/includes/qls.class.php on line 251
-[01-Sep-2015 21:19:14 UTC] PHP Stack trace:
-[01-Sep-2015 21:19:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/auth/admincp.php:0
-[01-Sep-2015 21:19:14 UTC] PHP   2. qls->fetch_file_data() /home/ubuntu/workspace/auth/admincp.php:311
-[01-Sep-2015 21:19:14 UTC] PHP   3. filesize() /home/ubuntu/workspace/auth/includes/qls.class.php:251
-[01-Sep-2015 21:19:27 UTC] PHP Warning:  fopen(/home/ubuntu/workspace/auth//pages/dash.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/auth/includes/Admin.class.php on line 658
-[01-Sep-2015 21:19:27 UTC] PHP Stack trace:
-[01-Sep-2015 21:19:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/auth/admincp.php:0
-[01-Sep-2015 21:19:27 UTC] PHP   2. Admin->edit_page() /home/ubuntu/workspace/auth/admincp.php:303
-[01-Sep-2015 21:19:27 UTC] PHP   3. fopen() /home/ubuntu/workspace/auth/includes/Admin.class.php:658
-[01-Sep-2015 21:19:30 UTC] PHP Warning:  filesize(): stat failed for /home/ubuntu/workspace/auth//dashboard/ in /home/ubuntu/workspace/auth/includes/qls.class.php on line 251
-[01-Sep-2015 21:19:30 UTC] PHP Stack trace:
-[01-Sep-2015 21:19:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/auth/admincp.php:0
-[01-Sep-2015 21:19:30 UTC] PHP   2. qls->fetch_file_data() /home/ubuntu/workspace/auth/admincp.php:311
-[01-Sep-2015 21:19:30 UTC] PHP   3. filesize() /home/ubuntu/workspace/auth/includes/qls.class.php:251
-[01-Sep-2015 21:19:36 UTC] PHP Warning:  unlink(/home/ubuntu/workspace/auth//dashboard/): No such file or directory in /home/ubuntu/workspace/auth/includes/Admin.class.php on line 588
-[01-Sep-2015 21:19:36 UTC] PHP Stack trace:
-[01-Sep-2015 21:19:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/auth/admincp.php:0
-[01-Sep-2015 21:19:36 UTC] PHP   2. Admin->remove_page() /home/ubuntu/workspace/auth/admincp.php:260
-[01-Sep-2015 21:19:36 UTC] PHP   3. unlink() /home/ubuntu/workspace/auth/includes/Admin.class.php:588
-[01-Sep-2015 21:27:12 UTC] PHP Warning:  unlink(/home/ubuntu/workspace/auth/index.php): No such file or directory in /home/ubuntu/workspace/auth/includes/Admin.class.php on line 588
-[01-Sep-2015 21:27:12 UTC] PHP Stack trace:
-[01-Sep-2015 21:27:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/auth/admincp.php:0
-[01-Sep-2015 21:27:12 UTC] PHP   2. Admin->remove_page() /home/ubuntu/workspace/auth/admincp.php:260
-[01-Sep-2015 21:27:12 UTC] PHP   3. unlink() /home/ubuntu/workspace/auth/includes/Admin.class.php:588
-[02-Sep-2015 12:03:30 UTC] PHP Warning:  include_once(pages/dash.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/sys/page_switch.php on line 4
-[02-Sep-2015 12:03:30 UTC] PHP Stack trace:
-[02-Sep-2015 12:03:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/sys/page_switch.php:0
-[02-Sep-2015 12:03:30 UTC] PHP Warning:  include_once(): Failed opening 'pages/dash.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/sys/page_switch.php on line 4
-[02-Sep-2015 12:03:30 UTC] PHP Stack trace:
-[02-Sep-2015 12:03:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/sys/page_switch.php:0
-[02-Sep-2015 12:04:45 UTC] PHP Warning:  require(sys/config.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/tmpl/head.php on line 1
-[02-Sep-2015 12:04:45 UTC] PHP Stack trace:
-[02-Sep-2015 12:04:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/tmpl/head.php:0
-[02-Sep-2015 12:04:45 UTC] PHP Fatal error:  require(): Failed opening required 'sys/config.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/tmpl/head.php on line 1
-[02-Sep-2015 12:04:45 UTC] PHP Stack trace:
-[02-Sep-2015 12:04:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/tmpl/head.php:0
-[02-Sep-2015 12:04:47 UTC] PHP Warning:  include_once(pages/dash.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/sys/page_switch.php on line 4
-[02-Sep-2015 12:04:47 UTC] PHP Stack trace:
-[02-Sep-2015 12:04:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/sys/page_switch.php:0
-[02-Sep-2015 12:04:47 UTC] PHP Warning:  include_once(): Failed opening 'pages/dash.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/sys/page_switch.php on line 4
-[02-Sep-2015 12:04:47 UTC] PHP Stack trace:
-[02-Sep-2015 12:04:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/sys/page_switch.php:0
-[02-Sep-2015 12:06:11 UTC] PHP Warning:  include_once(pages/dash.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/sys/page_switch.php on line 4
-[02-Sep-2015 12:06:11 UTC] PHP Stack trace:
-[02-Sep-2015 12:06:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/sys/page_switch.php:0
-[02-Sep-2015 12:06:11 UTC] PHP Warning:  include_once(): Failed opening 'pages/dash.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/sys/page_switch.php on line 4
-[02-Sep-2015 12:06:11 UTC] PHP Stack trace:
-[02-Sep-2015 12:06:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/sys/page_switch.php:0
-[02-Sep-2015 12:06:58 UTC] PHP Warning:  require(sys/config.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/tmpl/head.php on line 1
-[02-Sep-2015 12:06:58 UTC] PHP Stack trace:
-[02-Sep-2015 12:06:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/tmpl/head.php:0
-[02-Sep-2015 12:06:58 UTC] PHP Fatal error:  require(): Failed opening required 'sys/config.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/tmpl/head.php on line 1
-[02-Sep-2015 12:06:58 UTC] PHP Stack trace:
-[02-Sep-2015 12:06:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/tmpl/head.php:0
-[02-Sep-2015 12:07:00 UTC] PHP Warning:  include_once(pages/dash.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/sys/page_switch.php on line 4
-[02-Sep-2015 12:07:00 UTC] PHP Stack trace:
-[02-Sep-2015 12:07:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/sys/page_switch.php:0
-[02-Sep-2015 12:07:00 UTC] PHP Warning:  include_once(): Failed opening 'pages/dash.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/sys/page_switch.php on line 4
-[02-Sep-2015 12:07:00 UTC] PHP Stack trace:
-[02-Sep-2015 12:07:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/sys/page_switch.php:0
-[02-Sep-2015 12:08:23 UTC] PHP Warning:  include_once(pages/dash.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/sys/page_switch.php on line 4
-[02-Sep-2015 12:08:23 UTC] PHP Stack trace:
-[02-Sep-2015 12:08:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/sys/page_switch.php:0
-[02-Sep-2015 12:08:23 UTC] PHP Warning:  include_once(): Failed opening 'pages/dash.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/sys/page_switch.php on line 4
-[02-Sep-2015 12:08:23 UTC] PHP Stack trace:
-[02-Sep-2015 12:08:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/sys/page_switch.php:0
+[11-Sep-2015 10:58:26 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/lang/common.php on line 4
+[11-Sep-2015 10:58:54 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/lang/common.php on line 4
+[11-Sep-2015 10:59:14 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/lang/common.php on line 4
+[11-Sep-2015 11:00:23 UTC] PHP Parse error:  syntax error, unexpected 'include_once' (T_INCLUDE_ONCE) in /home/ubuntu/workspace/lang/common.php on line 37
+[11-Sep-2015 14:46:32 UTC] PHP Warning:  include_once(lang/lang.en.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/lang/common.php on line 37
+[11-Sep-2015 14:46:32 UTC] PHP Stack trace:
+[11-Sep-2015 14:46:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[11-Sep-2015 14:46:32 UTC] PHP Warning:  include_once(): Failed opening 'lang/lang.en.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/lang/common.php on line 37
+[11-Sep-2015 14:46:32 UTC] PHP Stack trace:
+[11-Sep-2015 14:46:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[11-Sep-2015 14:47:02 UTC] PHP Warning:  include_once(/lang/lang.en.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/lang/common.php on line 37
+[11-Sep-2015 14:47:02 UTC] PHP Stack trace:
+[11-Sep-2015 14:47:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[11-Sep-2015 14:47:02 UTC] PHP Warning:  include_once(): Failed opening '/lang/lang.en.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/lang/common.php on line 37
+[11-Sep-2015 14:47:02 UTC] PHP Stack trace:
+[11-Sep-2015 14:47:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[11-Sep-2015 14:48:08 UTC] PHP Warning:  include_once(/lang/lang.en.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/lang/common.php on line 37
+[11-Sep-2015 14:48:08 UTC] PHP Stack trace:
+[11-Sep-2015 14:48:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[11-Sep-2015 14:48:08 UTC] PHP Warning:  include_once(): Failed opening '/lang/lang.en.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/lang/common.php on line 37
+[11-Sep-2015 14:48:08 UTC] PHP Stack trace:
+[11-Sep-2015 14:48:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[11-Sep-2015 14:48:25 UTC] PHP Warning:  include_once(/lang/lang.en.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/lang/common.php on line 37
+[11-Sep-2015 14:48:25 UTC] PHP Stack trace:
+[11-Sep-2015 14:48:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[11-Sep-2015 14:48:25 UTC] PHP Warning:  include_once(): Failed opening '/lang/lang.en.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/lang/common.php on line 37
+[11-Sep-2015 14:48:25 UTC] PHP Stack trace:
+[11-Sep-2015 14:48:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[11-Sep-2015 14:48:38 UTC] PHP Warning:  include_once(/lang/lang.en.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/lang/common.php on line 37
+[11-Sep-2015 14:48:38 UTC] PHP Stack trace:
+[11-Sep-2015 14:48:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[11-Sep-2015 14:48:38 UTC] PHP Warning:  include_once(): Failed opening '/lang/lang.en.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/lang/common.php on line 37
+[11-Sep-2015 14:48:38 UTC] PHP Stack trace:
+[11-Sep-2015 14:48:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[11-Sep-2015 14:49:26 UTC] PHP Warning:  include_once(PHP_ROOTlang/lang.en.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/lang/common.php on line 37
+[11-Sep-2015 14:49:26 UTC] PHP Stack trace:
+[11-Sep-2015 14:49:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[11-Sep-2015 14:49:26 UTC] PHP Warning:  include_once(): Failed opening 'PHP_ROOTlang/lang.en.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/lang/common.php on line 37
+[11-Sep-2015 14:49:26 UTC] PHP Stack trace:
+[11-Sep-2015 14:49:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[11-Sep-2015 14:49:41 UTC] PHP Warning:  include_once(lang/lang.en.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/lang/common.php on line 37
+[11-Sep-2015 14:49:41 UTC] PHP Stack trace:
+[11-Sep-2015 14:49:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[11-Sep-2015 14:49:41 UTC] PHP Warning:  include_once(): Failed opening 'lang/lang.en.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/lang/common.php on line 37
+[11-Sep-2015 14:49:41 UTC] PHP Stack trace:
+[11-Sep-2015 14:49:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[11-Sep-2015 20:28:47 UTC] PHP Warning:  require(https://mywork-andreaem-dev.c9.io/lang/lang.en.php): failed to open stream: HTTP request failed! HTTP/1.0 502 Bad Gateway
+ in /home/ubuntu/workspace/lang/common.php on line 37
+[11-Sep-2015 20:28:47 UTC] PHP Warning:  require(https://mywork-andreaem-dev.c9.io/lang/lang.en.php): failed to open stream: HTTP request failed! HTTP/1.0 502 Bad Gateway
+ in /home/ubuntu/workspace/lang/common.php on line 37
+[11-Sep-2015 20:28:47 UTC] PHP Stack trace:
+[11-Sep-2015 20:28:47 UTC] PHP Stack trace:
+[11-Sep-2015 20:28:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[11-Sep-2015 20:28:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[11-Sep-2015 20:28:47 UTC] PHP Fatal error:  require(): Failed opening required 'https://mywork-andreaem-dev.c9.io/lang/lang.en.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/lang/common.php on line 37
+[11-Sep-2015 20:28:47 UTC] PHP Stack trace:
+[11-Sep-2015 20:28:47 UTC] PHP Fatal error:  require(): Failed opening required 'https://mywork-andreaem-dev.c9.io/lang/lang.en.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/lang/common.php on line 37
+[11-Sep-2015 20:28:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[11-Sep-2015 20:28:47 UTC] PHP Stack trace:
+[11-Sep-2015 20:28:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[11-Sep-2015 20:28:48 UTC] PHP Warning:  require(https://mywork-andreaem-dev.c9.io/lang/lang.en.php): failed to open stream: Connection refused in /home/ubuntu/workspace/lang/common.php on line 37
+[11-Sep-2015 20:28:48 UTC] PHP Stack trace:
+[11-Sep-2015 20:28:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[11-Sep-2015 20:28:48 UTC] PHP Fatal error:  require(): Failed opening required 'https://mywork-andreaem-dev.c9.io/lang/lang.en.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/lang/common.php on line 37
+[11-Sep-2015 20:28:48 UTC] PHP Stack trace:
+[11-Sep-2015 20:28:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[11-Sep-2015 20:29:04 UTC] PHP Warning:  require(https://mywork-andreaem-dev.c9.io/lang/lang.en.php): failed to open stream: HTTP request failed! HTTP/1.0 502 Bad Gateway
+ in /home/ubuntu/workspace/lang/common.php on line 37
+[11-Sep-2015 20:29:04 UTC] PHP Stack trace:
+[11-Sep-2015 20:29:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[11-Sep-2015 20:29:04 UTC] PHP Fatal error:  require(): Failed opening required 'https://mywork-andreaem-dev.c9.io/lang/lang.en.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/lang/common.php on line 37
+[11-Sep-2015 20:29:04 UTC] PHP Stack trace:
+[11-Sep-2015 20:29:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[11-Sep-2015 20:29:04 UTC] PHP Warning:  require(https://mywork-andreaem-dev.c9.io/lang/lang.en.php): failed to open stream: HTTP request failed! HTTP/1.0 502 Bad Gateway
+ in /home/ubuntu/workspace/lang/common.php on line 37
+[11-Sep-2015 20:29:04 UTC] PHP Stack trace:
+[11-Sep-2015 20:29:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[11-Sep-2015 20:29:04 UTC] PHP Warning:  require(https://mywork-andreaem-dev.c9.io/lang/lang.en.php): failed to open stream: HTTP request failed! HTTP/1.0 502 Bad Gateway
+ in /home/ubuntu/workspace/lang/common.php on line 37
+[11-Sep-2015 20:29:04 UTC] PHP Stack trace:
+[11-Sep-2015 20:29:04 UTC] PHP Fatal error:  require(): Failed opening required 'https://mywork-andreaem-dev.c9.io/lang/lang.en.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/lang/common.php on line 37
+[11-Sep-2015 20:29:04 UTC] PHP Stack trace:
+[11-Sep-2015 20:29:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[11-Sep-2015 20:29:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[11-Sep-2015 20:29:04 UTC] PHP Fatal error:  require(): Failed opening required 'https://mywork-andreaem-dev.c9.io/lang/lang.en.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/lang/common.php on line 37
+[11-Sep-2015 20:29:04 UTC] PHP Stack trace:
+[11-Sep-2015 20:29:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[11-Sep-2015 20:29:37 UTC] PHP Warning:  require(https://mywork-andreaem-dev.c9.io/lang/lang.en.php): failed to open stream: HTTP request failed! HTTP/1.0 502 Bad Gateway
+ in /home/ubuntu/workspace/lang/common.php on line 37
+[11-Sep-2015 20:29:37 UTC] PHP Stack trace:
+[11-Sep-2015 20:29:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[11-Sep-2015 20:29:37 UTC] PHP Fatal error:  require(): Failed opening required 'https://mywork-andreaem-dev.c9.io/lang/lang.en.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/lang/common.php on line 37
+[11-Sep-2015 20:29:37 UTC] PHP Stack trace:
+[11-Sep-2015 20:29:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[11-Sep-2015 20:29:53 UTC] PHP Warning:  require(https://mywork-andreaem-dev.c9.io/lang/lang.en.php): failed to open stream: HTTP request failed! HTTP/1.0 502 Bad Gateway
+ in /home/ubuntu/workspace/lang/common.php on line 37
+[11-Sep-2015 20:29:53 UTC] PHP Stack trace:
+[11-Sep-2015 20:29:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[11-Sep-2015 20:29:53 UTC] PHP Fatal error:  require(): Failed opening required 'https://mywork-andreaem-dev.c9.io/lang/lang.en.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/lang/common.php on line 37
+[11-Sep-2015 20:29:53 UTC] PHP Stack trace:
+[11-Sep-2015 20:29:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[11-Sep-2015 20:29:53 UTC] PHP Warning:  require(https://mywork-andreaem-dev.c9.io/lang/lang.en.php): failed to open stream: HTTP request failed! HTTP/1.0 502 Bad Gateway
+ in /home/ubuntu/workspace/lang/common.php on line 37
+[11-Sep-2015 20:29:53 UTC] PHP Stack trace:
+[11-Sep-2015 20:29:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[11-Sep-2015 20:29:53 UTC] PHP Fatal error:  require(): Failed opening required 'https://mywork-andreaem-dev.c9.io/lang/lang.en.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/lang/common.php on line 37
+[11-Sep-2015 20:29:53 UTC] PHP Stack trace:
+[11-Sep-2015 20:29:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[11-Sep-2015 23:09:20 UTC] PHP Warning:  require(https://mywork-andreaem-dev.c9.io/lang/lang.en.php): failed to open stream: HTTP request failed! HTTP/1.0 502 Bad Gateway
+ in /home/ubuntu/workspace/lang/common.php on line 37
+[11-Sep-2015 23:09:20 UTC] PHP Stack trace:
+[11-Sep-2015 23:09:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[11-Sep-2015 23:09:20 UTC] PHP Fatal error:  require(): Failed opening required 'https://mywork-andreaem-dev.c9.io/lang/lang.en.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/lang/common.php on line 37
+[11-Sep-2015 23:09:20 UTC] PHP Stack trace:
+[11-Sep-2015 23:09:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[12-Sep-2015 00:55:23 UTC] PHP Warning:  require(https://mywork-andreaem-dev.c9.io/lang/lang.en.php): failed to open stream: HTTP request failed! HTTP/1.0 502 Bad Gateway
+ in /home/ubuntu/workspace/lang/common.php on line 37
+[12-Sep-2015 00:55:23 UTC] PHP Stack trace:
+[12-Sep-2015 00:55:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[12-Sep-2015 00:55:23 UTC] PHP Fatal error:  require(): Failed opening required 'https://mywork-andreaem-dev.c9.io/lang/lang.en.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/lang/common.php on line 37
+[12-Sep-2015 00:55:23 UTC] PHP Stack trace:
+[12-Sep-2015 00:55:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[12-Sep-2015 01:01:30 UTC] PHP Warning:  require(https://mywork-andreaem-dev.c9.io/lang/lang.en.php): failed to open stream: HTTP request failed! HTTP/1.0 502 Bad Gateway
+ in /home/ubuntu/workspace/lang/common.php on line 37
+[12-Sep-2015 01:01:30 UTC] PHP Stack trace:
+[12-Sep-2015 01:01:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[12-Sep-2015 01:01:30 UTC] PHP Fatal error:  require(): Failed opening required 'https://mywork-andreaem-dev.c9.io/lang/lang.en.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/lang/common.php on line 37
+[12-Sep-2015 01:01:30 UTC] PHP Stack trace:
+[12-Sep-2015 01:01:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[12-Sep-2015 01:44:07 UTC] PHP Warning:  require(https://mywork-andreaem-dev.c9.io/lang/lang.en.php): failed to open stream: HTTP request failed! HTTP/1.0 502 Bad Gateway
+ in /home/ubuntu/workspace/lang/common.php on line 37
+[12-Sep-2015 01:44:07 UTC] PHP Stack trace:
+[12-Sep-2015 01:44:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[12-Sep-2015 01:44:07 UTC] PHP Fatal error:  require(): Failed opening required 'https://mywork-andreaem-dev.c9.io/lang/lang.en.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/lang/common.php on line 37
+[12-Sep-2015 01:44:07 UTC] PHP Stack trace:
+[12-Sep-2015 01:44:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[12-Sep-2015 01:44:40 UTC] PHP Warning:  require(https://mywork-andreaem-dev.c9.io/lang/lang.en.php): failed to open stream: HTTP request failed! HTTP/1.0 502 Bad Gateway
+ in /home/ubuntu/workspace/lang/common.php on line 37
+[12-Sep-2015 01:44:40 UTC] PHP Stack trace:
+[12-Sep-2015 01:44:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[12-Sep-2015 01:44:40 UTC] PHP Fatal error:  require(): Failed opening required 'https://mywork-andreaem-dev.c9.io/lang/lang.en.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/lang/common.php on line 37
+[12-Sep-2015 01:44:40 UTC] PHP Stack trace:
+[12-Sep-2015 01:44:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[12-Sep-2015 01:44:40 UTC] PHP Warning:  require(https://mywork-andreaem-dev.c9.io/lang/lang.en.php): failed to open stream: HTTP request failed! HTTP/1.0 502 Bad Gateway
+ in /home/ubuntu/workspace/lang/common.php on line 37
+[12-Sep-2015 01:44:40 UTC] PHP Stack trace:
+[12-Sep-2015 01:44:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[12-Sep-2015 01:44:40 UTC] PHP Fatal error:  require(): Failed opening required 'https://mywork-andreaem-dev.c9.io/lang/lang.en.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/lang/common.php on line 37
+[12-Sep-2015 01:44:40 UTC] PHP Stack trace:
+[12-Sep-2015 01:44:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[12-Sep-2015 01:44:57 UTC] PHP Warning:  require(https://mywork-andreaem-dev.c9.io/lang/lang.en.php): failed to open stream: HTTP request failed! HTTP/1.0 502 Bad Gateway
+ in /home/ubuntu/workspace/lang/common.php on line 37
+[12-Sep-2015 01:44:57 UTC] PHP Stack trace:
+[12-Sep-2015 01:44:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[12-Sep-2015 01:44:57 UTC] PHP Fatal error:  require(): Failed opening required 'https://mywork-andreaem-dev.c9.io/lang/lang.en.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/lang/common.php on line 37
+[12-Sep-2015 01:44:57 UTC] PHP Stack trace:
+[12-Sep-2015 01:44:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[12-Sep-2015 01:44:57 UTC] PHP Warning:  require(https://mywork-andreaem-dev.c9.io/lang/lang.en.php): failed to open stream: HTTP request failed! HTTP/1.0 502 Bad Gateway
+ in /home/ubuntu/workspace/lang/common.php on line 37
+[12-Sep-2015 01:44:57 UTC] PHP Stack trace:
+[12-Sep-2015 01:44:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[12-Sep-2015 01:44:57 UTC] PHP Fatal error:  require(): Failed opening required 'https://mywork-andreaem-dev.c9.io/lang/lang.en.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/lang/common.php on line 37
+[12-Sep-2015 01:44:57 UTC] PHP Stack trace:
+[12-Sep-2015 01:44:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[12-Sep-2015 04:03:26 UTC] PHP Warning:  require(https://mywork-andreaem-dev.c9.io/lang/lang.en.php): failed to open stream: HTTP request failed! HTTP/1.0 502 Bad Gateway
+ in /home/ubuntu/workspace/lang/common.php on line 37
+[12-Sep-2015 04:03:26 UTC] PHP Stack trace:
+[12-Sep-2015 04:03:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[12-Sep-2015 04:03:26 UTC] PHP Fatal error:  require(): Failed opening required 'https://mywork-andreaem-dev.c9.io/lang/lang.en.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/lang/common.php on line 37
+[12-Sep-2015 04:03:26 UTC] PHP Stack trace:
+[12-Sep-2015 04:03:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[12-Sep-2015 05:45:13 UTC] PHP Warning:  require(https://mywork-andreaem-dev.c9.io/lang/lang.en.php): failed to open stream: HTTP request failed! HTTP/1.0 502 Bad Gateway
+ in /home/ubuntu/workspace/lang/common.php on line 37
+[12-Sep-2015 05:45:13 UTC] PHP Stack trace:
+[12-Sep-2015 05:45:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0
+[12-Sep-2015 05:45:13 UTC] PHP Fatal error:  require(): Failed opening required 'https://mywork-andreaem-dev.c9.io/lang/lang.en.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/lang/common.php on line 37
+[12-Sep-2015 05:45:13 UTC] PHP Stack trace:
+[12-Sep-2015 05:45:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/lang/common.php:0

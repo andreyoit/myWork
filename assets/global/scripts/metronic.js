@@ -571,7 +571,7 @@ var Metronic = function() {
     var handlePromo = function() {
 
         var init = function() {
-            var html = '';
+           /* var html = '';
 
             html  = '<div class="promo-layer" style="z-index: 100000; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0, 0.8)">';  
             html += '   <div style="z-index: 100001; top: 50%; left: 50%; margin: -300px 0 0 -400px; width: 800px; height: 600px; position: fixed;">';
@@ -623,9 +623,9 @@ var Metronic = function() {
             html += '           </div>';
             html += '       </div>';
             html += '   </div>';
-            html += '</div>';
+            html += '</div>'; 
 
-            $('body').append(html);
+            $('body').append(html);*/
 
             $('.promo-dismiss').click(function(){
                 $('.promo-layer').remove();
@@ -638,7 +638,7 @@ var Metronic = function() {
 
                 $.cookie('user-page-views', 1, { expires: 1, path: '/' });
             });
-        }
+        } 
 
         if ($.cookie) {
             var pageViews = $.cookie('user-page-views') ? parseInt($.cookie('user-page-views')) : 0;

@@ -227,7 +227,7 @@
 											<div class="scroller" style="max-height: 600px;" data-always-visible="0" data-rail-visible="0" data-handle-color="#dae3e7">
 												<div class="todo-tasklist">
 													<div class="todo-tasklist-item todo-tasklist-item-border-green">
-														<img class="todo-userpic pull-left" src="../../assets/admin/layout/img/avatar4.jpg" width="27px" height="27px">
+														<img class="todo-userpic pull-left" src="<?php echo $app_url; ?>assets/admin/layout/img/avatar4.jpg" width="27px" height="27px">
 														<div class="todo-tasklist-item-title">
 															 Slider Redesign
 														</div>
@@ -240,7 +240,7 @@
 														</div>
 													</div>
 													<div class="todo-tasklist-item todo-tasklist-item-border-red">
-														<img class="todo-userpic pull-left" src="../../assets/admin/layout/img/avatar5.jpg" width="27px" height="27px">
+														<img class="todo-userpic pull-left" src="<?php echo $app_url; ?>assets/admin/layout/img/avatar5.jpg" width="27px" height="27px">
 														<div class="todo-tasklist-item-title">
 															 Homepage Alignments to adjust
 														</div>
@@ -253,7 +253,7 @@
 														</div>
 													</div>
 													<div class="todo-tasklist-item todo-tasklist-item-border-green">
-														<img class="todo-userpic pull-left" src="../../assets/admin/layout/img/avatar9.jpg" width="27px" height="27px">
+														<img class="todo-userpic pull-left" src="<?php echo $app_url; ?>assets/admin/layout/img/avatar9.jpg" width="27px" height="27px">
 														<div class="todo-tasklist-item-title">
 															 Slider Redesign
 														</div>
@@ -263,7 +263,7 @@
 														</div>
 													</div>
 													<div class="todo-tasklist-item todo-tasklist-item-border-blue">
-														<img class="todo-userpic pull-left" src="../../assets/admin/layout/img/avatar6.jpg" width="27px" height="27px">
+														<img class="todo-userpic pull-left" src="<?php echo $app_url; ?>assets/admin/layout/img/avatar6.jpg" width="27px" height="27px">
 														<div class="todo-tasklist-item-title">
 															 Contact Us Map Location changes
 														</div>
@@ -276,7 +276,7 @@
 														</div>
 													</div>
 													<div class="todo-tasklist-item todo-tasklist-item-border-purple">
-														<img class="todo-userpic pull-left" src="../../assets/admin/layout/img/avatar7.jpg" width="27px" height="27px">
+														<img class="todo-userpic pull-left" src="<?php echo $app_url; ?>assets/admin/layout/img/avatar7.jpg" width="27px" height="27px">
 														<div class="todo-tasklist-item-title">
 															 Projects list new Forms
 														</div>
@@ -288,7 +288,7 @@
 														</div>
 													</div>
 													<div class="todo-tasklist-item todo-tasklist-item-border-yellow">
-														<img class="todo-userpic pull-left" src="../../assets/admin/layout/img/avatar8.jpg" width="27px" height="27px">
+														<img class="todo-userpic pull-left" src="<?php echo $app_url; ?>assets/admin/layout/img/avatar8.jpg" width="27px" height="27px">
 														<div class="todo-tasklist-item-title">
 															 New Search Keywords
 														</div>
@@ -301,7 +301,7 @@
 														</div>
 													</div>
 													<div class="todo-tasklist-item todo-tasklist-item-border-green">
-														<img class="todo-userpic pull-left" src="../../assets/admin/layout/img/avatar9.jpg" width="27px" height="27px">
+														<img class="todo-userpic pull-left" src="<?php echo $app_url; ?>assets/admin/layout/img/avatar9.jpg" width="27px" height="27px">
 														<div class="todo-tasklist-item-title">
 															 Slider Redesign
 														</div>
@@ -311,7 +311,7 @@
 														</div>
 													</div>
 													<div class="todo-tasklist-item todo-tasklist-item-border-red">
-														<img class="todo-userpic pull-left" src="../../assets/admin/layout/img/avatar5.jpg" width="27px" height="27px">
+														<img class="todo-userpic pull-left" src="<?php echo $app_url; ?>assets/admin/layout/img/avatar5.jpg" width="27px" height="27px">
 														<div class="todo-tasklist-item-title">
 															 Homepage Alignments to adjust
 														</div>
@@ -324,7 +324,7 @@
 														</div>
 													</div>
 													<div class="todo-tasklist-item todo-tasklist-item-border-blue">
-														<img class="todo-userpic pull-left" src="../../assets/admin/layout/img/avatar6.jpg" width="27px" height="27px">
+														<img class="todo-userpic pull-left" src="<?php echo $app_url; ?>assets/admin/layout/img/avatar6.jpg" width="27px" height="27px">
 														<div class="todo-tasklist-item-title">
 															 Contact Us Improvement
 														</div>
@@ -349,7 +349,7 @@
 														<div class="form-group">
 															<div class="col-md-8 col-sm-8">
 																<div class="todo-taskbody-user">
-																	<img class="todo-userpic pull-left" src="../../assets/admin/layout/img/avatar6.jpg" width="50px" height="50px">
+																	<img class="todo-userpic pull-left" src="<?php echo $app_url; ?>assets/admin/layout/img/avatar6.jpg" width="50px" height="50px">
 																	<span class="todo-username pull-left">Vanessa Bond</span>
 																	<button type="button" class="todo-username-btn btn btn-circle btn-default btn-xs">&nbsp;edit&nbsp;</button>
 																</div>
@@ -414,7 +414,7 @@
 																		<ul class="media-list">
 																			<li class="media">
 																				<a class="pull-left" href="javascript:;">
-																				<img class="todo-userpic" src="../../assets/admin/layout/img/avatar8.jpg" width="27px" height="27px">
+																				<img class="todo-userpic" src="<?php echo $app_url; ?>assets/admin/layout/img/avatar8.jpg" width="27px" height="27px">
 																				</a>
 																				<div class="media-body todo-comment">
 																					<button type="button" class="todo-comment-btn btn btn-circle btn-default btn-xs">&nbsp; Reply &nbsp;</button>
@@ -427,7 +427,7 @@
 																					<!-- Nested media object -->
 																					<div class="media">
 																						<a class="pull-left" href="javascript:;">
-																						<img class="todo-userpic" src="../../assets/admin/layout/img/avatar4.jpg" width="27px" height="27px">
+																						<img class="todo-userpic" src="<?php echo $app_url; ?>assets/admin/layout/img/avatar4.jpg" width="27px" height="27px">
 																						</a>
 																						<div class="media-body">
 																							<p class="todo-comment-head">
@@ -442,7 +442,7 @@
 																			</li>
 																			<li class="media">
 																				<a class="pull-left" href="javascript:;">
-																				<img class="todo-userpic" src="../../assets/admin/layout/img/avatar5.jpg" width="27px" height="27px">
+																				<img class="todo-userpic" src="<?php echo $app_url; ?>assets/admin/layout/img/avatar5.jpg" width="27px" height="27px">
 																				</a>
 																				<div class="media-body todo-comment">
 																					<button type="button" class="todo-comment-btn btn btn-circle btn-default btn-xs">&nbsp; Reply &nbsp;</button>
@@ -456,7 +456,7 @@
 																			</li>
 																			<li class="media">
 																				<a class="pull-left" href="javascript:;">
-																				<img class="todo-userpic" src="../../assets/admin/layout/img/avatar6.jpg" width="27px" height="27px">
+																				<img class="todo-userpic" src="<?php echo $app_url; ?>assets/admin/layout/img/avatar6.jpg" width="27px" height="27px">
 																				</a>
 																				<div class="media-body todo-comment">
 																					<button type="button" class="todo-comment-btn btn btn-circle btn-default btn-xs">&nbsp; Reply &nbsp;</button>
@@ -477,7 +477,7 @@
 																	<div class="col-md-12">
 																		<ul class="media-list">
 																			<li class="media">
-																				<img class="todo-userpic pull-left" src="../../assets/admin/layout/img/avatar4.jpg" width="27px" height="27px">
+																				<img class="todo-userpic pull-left" src="<?php echo $app_url; ?>assets/admin/layout/img/avatar4.jpg" width="27px" height="27px">
 																				<div class="media-body">
 																					<textarea class="form-control todo-taskbody-taskdesc" rows="4" placeholder="Type comment..."></textarea>
 																				</div>
@@ -541,3 +541,34 @@
 		</div>
 	</div>
 	<!-- END CONTENT -->
+	<script src="<?php echo $app_url; ?>assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+<script src="<?php echo $app_url; ?>assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+<!-- IMPORTANT! Load jquery-ui.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+<script src="<?php echo $app_url; ?>assets/global/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+<script src="<?php echo $app_url; ?>assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="<?php echo $app_url; ?>assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+<script src="<?php echo $app_url; ?>assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="<?php echo $app_url; ?>assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+<script src="<?php echo $app_url; ?>assets/global/plugins/jquery.cokie.min.js" type="text/javascript"></script>
+<script src="<?php echo $app_url; ?>assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+<script src="<?php echo $app_url; ?>assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+<!-- END CORE PLUGINS -->
+<!-- BEGIN PAGE PLUGINS & SCRIPTS -->
+<script type="text/javascript" src="<?php echo $app_url; ?>assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="<?php echo $app_url; ?>assets/global/plugins/select2/select2.min.js"></script>
+<script src="<?php echo $app_url; ?>assets/admin/pages/scripts/todo.js" type="text/javascript"></script>
+<!-- END PAGE PLUGINS & SCRIPTS -->
+<script src="<?php echo $app_url; ?>assets/global/scripts/metronic.js" type="text/javascript"></script>
+<script src="<?php echo $app_url; ?>assets/admin/layout/scripts/layout.js" type="text/javascript"></script>
+<script src="<?php echo $app_url; ?>assets/admin/layout/scripts/quick-sidebar.js" type="text/javascript"></script>
+<script src="<?php echo $app_url; ?>assets/admin/layout/scripts/demo.js" type="text/javascript"></script>
+<script>
+    jQuery(document).ready(function() {    
+        Metronic.init(); // init metronic core components
+Layout.init(); // init current layout
+QuickSidebar.init(); // init quick sidebar
+Demo.init(); // init demo features
+Todo.init(); // init todo page
+    });
+</script>
+<!-- END JAVASCRIPTS -->
