@@ -58,3 +58,22 @@ Change Quick Sidebar Width
   margin-left: -370px;
 }
 */
+
+#my_work_edition { 
+    font-size: 0.9em;
+    margin-left: 20%;
+    margin-top: 17px;
+    z-index: 99999;
+    color: #B3B3B2;
+  
+}
+
+#lang-flag {
+  margin-top:-6px;
+  width:31px;
+  height:31px;
+}
+
+.dropdown-language {
+  height:43px!important;  
+}

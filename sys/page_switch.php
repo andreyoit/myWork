@@ -16,10 +16,10 @@ if (! isset($_GET['page']))
                 include($app_url . 'pages/dash.php');
                 break;  
             case 'todo':
-                include(PHP_ROOT . '/pages/todo.php');
+                include($app_url . '/pages/todo.php');
                 break;  
-            case 'photos':
-                include('./photos.php');
+            case 'profile':
+                include($app_url . 'pages/profile.php');
                 break;  
             case 'events':
                 include('./events.php');

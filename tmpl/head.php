@@ -1,4 +1,7 @@
- <?php include 'https://mywork-andreaem-dev.c9.io/sys/config.php'; ?>
+ <?php 	include 'https://mywork-andreaem-dev.c9.io/sys/config.php'; 
+ 		include 'lang/common.php';
+ 		
+      ?>
 
 <!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
@@ -13,28 +16,32 @@
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="" name="description"/>
 <meta content="" name="author"/>
+<!-- BEGIN PACE PLUGIN FILES -->
+<script src="<?php print $app_url; ?>assets/global/plugins/pace/pace.min.js" type="text/javascript"></script>
+<link href="<?php print $app_url; ?>assets/global/plugins/pace/themes/pace-theme-flash.css" rel="stylesheet" type="text/css">
+<!-- END PACE PLUGIN FILES -->
 <!-- BEGIN GLOBAL MANDATORY STYLES -->
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css"/>
-<link href="<?php echo $app_url; ?>assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-<link href="<?php echo $app_url; ?>assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
-<link href="<?php echo $app_url; ?>assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-<link href="<?php echo $app_url; ?>assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
-<link href="<?php echo $app_url; ?>assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css"/>
+<link href="<?php print $app_url; ?>assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+<link href="<?php print $app_url; ?>assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
+<link href="<?php print $app_url; ?>assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="<?php print $app_url; ?>assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+<link href="<?php print $app_url; ?>assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css"/>
 <!-- END GLOBAL MANDATORY STYLES -->
 <!-- BEGIN PAGE LEVEL PLUGIN STYLES -->
-<link href="<?php echo $app_url; ?>assets/global/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css"/>
-<link href="<?php echo $app_url; ?>assets/global/plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css"/>
-<link href="<?php echo $app_url; ?>assets/global/plugins/jqvmap/jqvmap/jqvmap.css" rel="stylesheet" type="text/css"/>
+<link href="<?php print $app_url; ?>assets/global/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css"/>
+<link href="<?php print $app_url; ?>assets/global/plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css"/>
+<link href="<?php print $app_url; ?>assets/global/plugins/jqvmap/jqvmap/jqvmap.css" rel="stylesheet" type="text/css"/>
 <!-- END PAGE LEVEL PLUGIN STYLES -->
 <!-- BEGIN PAGE STYLES -->
 
 <!-- END PAGE STYLES -->
 <!-- BEGIN THEME STYLES -->
-<link href="<?php echo $app_url; ?>assets/global/css/components-md.css" id="style_components" rel="stylesheet" type="text/css"/>
-<link href="<?php echo $app_url; ?>assets/global/css/plugins-md.css" rel="stylesheet" type="text/css"/>
-<link href="<?php echo $app_url; ?>assets/admin/layout/css/layout.css" rel="stylesheet" type="text/css"/>
-<link href="<?php echo $app_url; ?>assets/admin/layout/css/themes/darkblue.css" rel="stylesheet" type="text/css" id="style_color"/>
-<link href="<?php echo $app_url; ?>assets/admin/layout/css/custom.css" rel="stylesheet" type="text/css"/>
+<link href="<?php print $app_url; ?>assets/global/css/components-md.css" id="style_components" rel="stylesheet" type="text/css"/>
+<link href="<?php print $app_url; ?>assets/global/css/plugins-md.css" rel="stylesheet" type="text/css"/>
+<link href="<?php print $app_url; ?>assets/admin/layout/css/layout.css" rel="stylesheet" type="text/css"/>
+<link href="<?php print $app_url; ?>assets/admin/layout/css/themes/darkblue.css" rel="stylesheet" type="text/css" id="style_color"/>
+<link href="<?php print $app_url; ?>assets/admin/layout/css/custom.css" rel="stylesheet" type="text/css"/>
 <!-- END THEME STYLES -->
 <link rel="shortcut icon" href="favicon.ico"/>
 </head>
@@ -58,8 +65,8 @@
 		<div class="page-logo">
 			<a href="index.html">
 			   
-			<img src="<?php echo $app_url; ?>assets/admin/layout/img/logo-big.png" alt="logo" class="logo-default"/>
-			</a>
+			<img src="<?php print $app_url; ?>assets/admin/layout/img/logo-big.png" alt="logo" class="logo-default"/>
+			</a><h4 id="my_work_edition"> Freelance</h4>
 			<div class="menu-toggler sidebar-toggler hide">
 			</div>
 		</div>
@@ -183,7 +190,7 @@
 				<!-- END NOTIFICATION DROPDOWN -->
 				<!-- BEGIN INBOX DROPDOWN -->
 				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
-				<li class="dropdown dropdown-extended dropdown-inbox" id="header_inbox_bar">
+				<!--<li class="dropdown dropdown-extended dropdown-inbox" id="header_inbox_bar">
 					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
 					<i class="icon-envelope-open"></i>
 					<span class="badge badge-default">
@@ -227,7 +234,7 @@
 								<li>
 									<a href="inbox.html?a=view">
 									<span class="photo">
-									<img src="<?php echo $app_url; ?>assets/admin/layout3/img/avatar1.jpg" class="img-circle" alt="">
+									<img src="<?php print $app_url; ?>assets/admin/layout3/img/avatar1.jpg" class="img-circle" alt="">
 									</span>
 									<span class="subject">
 									<span class="from">
@@ -241,7 +248,7 @@
 								<li>
 									<a href="inbox.html?a=view">
 									<span class="photo">
-									<img src="<?php echo $app_url; ?>assets/admin/layout3/img/avatar2.jpg" class="img-circle" alt="">
+									<img src="<?php print $app_url; ?>assets/admin/layout3/img/avatar2.jpg" class="img-circle" alt="">
 									</span>
 									<span class="subject">
 									<span class="from">
@@ -255,7 +262,7 @@
 								<li>
 									<a href="inbox.html?a=view">
 									<span class="photo">
-									<img src="<?php echo $app_url; ?>assets/admin/layout3/img/avatar3.jpg" class="img-circle" alt="">
+									<img src="<?php print $app_url; ?>assets/admin/layout3/img/avatar3.jpg" class="img-circle" alt="">
 									</span>
 									<span class="subject">
 									<span class="from">
@@ -273,31 +280,27 @@
 				<!-- END INBOX DROPDOWN -->
 				<!-- BEGIN TODO DROPDOWN -->
 				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+				<?php include 'https://mywork-andreaem-dev.c9.io/sys/db/tasks.count.php'; ?>
 				<li class="dropdown dropdown-extended dropdown-tasks" id="header_task_bar">
 					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
 					<i class="icon-calendar"></i>
 					<span class="badge badge-default">
-					3 </span>
+					<?php echo $task_num; ?> </span>
 					</a>
 					<ul class="dropdown-menu extended tasks">
 						<li class="external">
-							<h3>You have <span class="bold">12 pending</span> tasks</h3>
+							
+							<h3>You have <span class="bold"><?php echo $task_num ?> pending</span> tasks</h3>
 							<a href="page_todo.html">view all</a>
 						</li>
 						<li>
 							<ul class="dropdown-menu-list scroller" style="height: 275px;" data-handle-color="#637283">
-								<li>
-									<a href="javascript:;">
-									<span class="task">
-									<span class="desc">New release v1.2 </span>
-									<span class="percent">30%</span>
-									</span>
-									<span class="progress">
-									<span style="width: 40%;" class="progress-bar progress-bar-success" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"><span class="sr-only">40% Complete</span></span>
-									</span>
-									</a>
-								</li>
-								<li>
+								<?php 
+								include 'https://mywork-andreaem-dev.c9.io/sys/db/tasks.get.head.php';
+								
+								?>
+							
+								<!--<li>
 									<a href="javascript:;">
 									<span class="task">
 									<span class="desc">Application deployment</span>
@@ -362,7 +365,7 @@
 									<span style="width: 38%;" class="progress-bar progress-bar-important" aria-valuenow="18" aria-valuemin="0" aria-valuemax="100"><span class="sr-only">38% Complete</span></span>
 									</span>
 									</a>
-								</li>
+								</li>-->
 							</ul>
 						</li>
 					</ul>
@@ -370,31 +373,32 @@
 				<!-- END TODO DROPDOWN -->
 				<!-- BEGIN USER LOGIN DROPDOWN -->
 				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+				
 				<li class="dropdown dropdown-user">
 					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-					<img alt="" class="img-circle" src="<?php echo $app_url; ?>assets/admin/layout/img/avatar3_small.jpg"/>
+					<img alt="" class="img-circle" src="<?php print $app_url; ?>assets/admin/layout/img/avatar3_small.jpg"/>
 					<span class="username username-hide-on-mobile">
-					<?php echo $qls->user_info['username'] ?></span>
+					<?php echo $qls->user_info['username']; ?></span>
 					<i class="fa fa-angle-down"></i>
 					</a>
 					<ul class="dropdown-menu dropdown-menu-default">
 						<li>
-							<a href="extra_profile.html">
-							<i class="icon-user"></i> My Profile </a>
+							<a href="app.php?page=profile">
+							<i class="icon-user"></i> <?php echo $lang['HEADER_PROFILE']; ?> </a>
 						</li>
 						<li>
 							<a href="page_calendar.html">
-							<i class="icon-calendar"></i> My Calendar </a>
+							<i class="icon-calendar"></i> <?php echo $lang['HEADER_CALENDAR']; ?> </a>
 						</li>
-						<li>
+					<!--	<li>
 							<a href="inbox.html">
-							<i class="icon-envelope-open"></i> My Inbox <span class="badge badge-danger">
+							<i class="icon-envelope-open"></i> <?php print $lang['HEADER_INBOX']; ?> <span class="badge badge-danger">
 							3 </span>
 							</a>
-						</li>
+						</li>-->
 						<li>
 							<a href="page_todo.html">
-							<i class="icon-rocket"></i> My Tasks <span class="badge badge-success">
+							<i class="icon-rocket"></i> <?php print $lang['HEADER_TASKS']; ?> <span class="badge badge-success">
 							7 </span>
 							</a>
 						</li>
@@ -402,15 +406,40 @@
 						</li>
 						<li>
 							<a href="extra_lock.html">
-							<i class="icon-lock"></i> Lock Screen </a>
+							<i class="icon-lock"></i> <?php print $lang['HEADER_LOCKSCREEN']; ?> </a>
 						</li>
 						<li>
-							<a href="login.html">
-							<i class="icon-key"></i> Log Out </a>
+							<a href="auth/logout.php">
+							<i class="icon-key"></i> <?php print $lang['HEADER_LOGOUT']; ?> </a>
 						</li>
 					</ul>
 				</li>
 				<!-- END USER LOGIN DROPDOWN -->
+				
+				<li class="dropdown dropdown-language">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+					<img alt="" src="<?php echo $app_url; ?>/assets/global/img/flags/<?php if(isset($_GET['lang'])) {echo $lang_name;} else { echo 'English';} ?>.png" id="lang-flag">
+					<span class="langname">
+					 </span>
+					<i class="fa fa-angle-down"></i>
+					</a>
+					<ul class="dropdown-menu dropdown-menu-default">
+						<?php 
+						
+						foreach ($lang_list as $languages ) {
+							if($languages == 'English') { $lang_link = 'en'; } elseif ($languages == 'Italian') { $lang_link = 'it'; }
+							echo '<li>';
+							echo '<a href="?lang=' . $lang_link . '">';
+							echo '<img alt="" src="assets/global/img/flags/' . $languages . '.png" id="lang-flag"> ' . $languages .' </a>';
+							echo '</li>';
+						}
+						?>
+						<!--<li>
+							<a href="?lang=it">
+							<img alt="" src="../../assets/global/img/flags/it.png" id="lang-flag"> Italian </a>
+						</li>-->
+					</ul>
+				</li>
 				<!-- BEGIN QUICK SIDEBAR TOGGLER -->
 				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
 				<li class="dropdown dropdown-quick-sidebar-toggler">

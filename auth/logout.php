@@ -33,9 +33,15 @@ define('QUADODO_IN_SYSTEM', true);
 require_once('includes/Blank.lang.php');
 require_once('includes/qls.class.php');
 
+// Delete Cookies
+unset($_COOKIE['login']);
+setcookie('login', '0', time() - 3600, '/');
+
 // Start the main class
 $qls = new qls(SYS_CURRENT_LANG);
 
 // Logout user
 $qls->User->logout_user();
+
+
 ?>
