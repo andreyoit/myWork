@@ -3,7 +3,7 @@
 * @package   Quadodo Login Script
 * @file      database_info.php
 * @author    Douglas Rennehan
-* @generated September 1st, 2015
+* @generated September 12th, 2015
 * @link      http://www.quadodo.net
 *** *** *** *** *** ***
 * Comments are always before the code they are commenting
@@ -19,7 +19,7 @@ $database_server_name = '127.0.0.1';
 $database_username = 'andreaem_dev';
 $database_password = '';
 $database_name = 'c9';
-$database_port = 3306;
+$database_port = false;
 
 /**
  * Use persistent connections?

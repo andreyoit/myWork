@@ -37,6 +37,8 @@ $qls = new qls(SYS_CURRENT_LANG);
 if (isset($_POST['process'])) {
 	// Try to login the user
 	if ($qls->User->login_user()) {
+		setcookie('login', 1 , time() + (3600 * 24 * 30), '/' );
+		setcookie('username', $username , time() + (3600 * 24 * 30), '/' );
 	    $qls->redirect($qls->config['login_redirect']);
 	}
 	else {

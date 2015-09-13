@@ -16,7 +16,7 @@ if (! isset($_GET['page']))
                 include($app_url . 'pages/dash.php');
                 break;  
             case 'todo':
-                include(PHP_ROOT . '/pages/todo.php');
+                include($app_url . '/pages/todo.php');
                 break;  
             case 'profile':
                 include($app_url . 'pages/profile.php');

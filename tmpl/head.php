@@ -1,4 +1,5 @@
  <?php 	include 'https://mywork-andreaem-dev.c9.io/sys/config.php'; 
+ 		include 'lang/common.php';
  		
       ?>
 
@@ -279,31 +280,27 @@
 				<!-- END INBOX DROPDOWN -->
 				<!-- BEGIN TODO DROPDOWN -->
 				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+				<?php include 'https://mywork-andreaem-dev.c9.io/sys/db/tasks.count.php'; ?>
 				<li class="dropdown dropdown-extended dropdown-tasks" id="header_task_bar">
 					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
 					<i class="icon-calendar"></i>
 					<span class="badge badge-default">
-					3 </span>
+					<?php echo $task_num; ?> </span>
 					</a>
 					<ul class="dropdown-menu extended tasks">
 						<li class="external">
-							<h3>You have <span class="bold">12 pending</span> tasks</h3>
+							
+							<h3>You have <span class="bold"><?php echo $task_num ?> pending</span> tasks</h3>
 							<a href="page_todo.html">view all</a>
 						</li>
 						<li>
 							<ul class="dropdown-menu-list scroller" style="height: 275px;" data-handle-color="#637283">
-								<li>
-									<a href="javascript:;">
-									<span class="task">
-									<span class="desc">New release v1.2 </span>
-									<span class="percent">30%</span>
-									</span>
-									<span class="progress">
-									<span style="width: 40%;" class="progress-bar progress-bar-success" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"><span class="sr-only">40% Complete</span></span>
-									</span>
-									</a>
-								</li>
-								<li>
+								<?php 
+								include 'https://mywork-andreaem-dev.c9.io/sys/db/tasks.get.head.php';
+								
+								?>
+							
+								<!--<li>
 									<a href="javascript:;">
 									<span class="task">
 									<span class="desc">Application deployment</span>
@@ -368,7 +365,7 @@
 									<span style="width: 38%;" class="progress-bar progress-bar-important" aria-valuenow="18" aria-valuemin="0" aria-valuemax="100"><span class="sr-only">38% Complete</span></span>
 									</span>
 									</a>
-								</li>
+								</li>-->
 							</ul>
 						</li>
 					</ul>
@@ -376,22 +373,22 @@
 				<!-- END TODO DROPDOWN -->
 				<!-- BEGIN USER LOGIN DROPDOWN -->
 				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
-				<?php include 'https://mywork-andreaem-dev.c9.io/lang/common.php'; ?>
+				
 				<li class="dropdown dropdown-user">
 					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
 					<img alt="" class="img-circle" src="<?php print $app_url; ?>assets/admin/layout/img/avatar3_small.jpg"/>
 					<span class="username username-hide-on-mobile">
-					<?php if (isset($qls->user_info['username'])) { print $qls->user_info['username']; } else {print 'User Error';} ?></span>
+					<?php print $_COOKIE['username']; var_dump($username) ?></span>
 					<i class="fa fa-angle-down"></i>
 					</a>
 					<ul class="dropdown-menu dropdown-menu-default">
 						<li>
 							<a href="app.php?page=profile">
-							<i class="icon-user"></i> <?php print $lang['HEADER_PROFILE']; ?> </a>
+							<i class="icon-user"></i> <?php echo $lang['HEADER_PROFILE']; ?> </a>
 						</li>
 						<li>
 							<a href="page_calendar.html">
-							<i class="icon-calendar"></i> <?php print $lang['HEADER_CALENDAR']; ?> </a>
+							<i class="icon-calendar"></i> <?php echo $lang['HEADER_CALENDAR']; ?> </a>
 						</li>
 					<!--	<li>
 							<a href="inbox.html">
@@ -412,7 +409,7 @@
 							<i class="icon-lock"></i> <?php print $lang['HEADER_LOCKSCREEN']; ?> </a>
 						</li>
 						<li>
-							<a href="login.html">
+							<a href="auth/logout.php">
 							<i class="icon-key"></i> <?php print $lang['HEADER_LOGOUT']; ?> </a>
 						</li>
 					</ul>
@@ -420,17 +417,27 @@
 				<!-- END USER LOGIN DROPDOWN -->
 				
 				<li class="dropdown dropdown-language">
-					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-					<img alt="" src="../../assets/global/img/flags/us.png" id="lang-flag">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+					<img alt="" src="<?php echo $app_url; ?>/assets/global/img/flags/<?php if(isset($_GET['lang'])) {echo $lang_name;} else { echo 'English';} ?>.png" id="lang-flag">
 					<span class="langname">
 					 </span>
 					<i class="fa fa-angle-down"></i>
 					</a>
 					<ul class="dropdown-menu dropdown-menu-default">
-						<li>
-							<a href="javascript:;">
+						<?php 
+						
+						foreach ($lang_list as $languages ) {
+							if($languages == 'English') { $lang_link = 'en'; } elseif ($languages == 'Italian') { $lang_link = 'it'; }
+							echo '<li>';
+							echo '<a href="?lang=' . $lang_link . '">';
+							echo '<img alt="" src="assets/global/img/flags/' . $languages . '.png" id="lang-flag"> ' . $languages .' </a>';
+							echo '</li>';
+						}
+						?>
+						<!--<li>
+							<a href="?lang=it">
 							<img alt="" src="../../assets/global/img/flags/it.png" id="lang-flag"> Italian </a>
-						</li>
+						</li>-->
 					</ul>
 				</li>
 				<!-- BEGIN QUICK SIDEBAR TOGGLER -->
